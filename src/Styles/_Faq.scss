@@ -1,11 +1,21 @@
+$off-white: #fcf7f8;
+$dark-blue: #211c4f;
+$material-grey: #bab0ba;
+$material-pink: #d98d91;
+$material-purple: #7d7ebe;
+$material-red: #eb561a;
+$material-yellow: #f0ac39;
+$off-black: #322645;
+
 // The accordion section 
 .accordion__section {
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .accordion {
-    background-color: #eee;
+    background-color: $material-purple;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -14,12 +24,15 @@
     border: none;
     outline: none;
     transition: background-color 0.6s ease;
+    width: 80%;
+    margin: 0 auto;
+
 }
 
 // And a background color tot eh button if it is clicked on {add the active class}
 .accordion:hover,
 .active {
-    background-color: #ccc;
+    background-color: $material-yellow;
 }
 //  Style accordion content title
 .accordion__title {

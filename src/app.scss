@@ -319,17 +319,18 @@ html {
     padding: 60px;
     flex-direction: column;
     text-align: center;
-    
+
     .outer-text {
         // border: 2px solid red;
-        
+
         padding-bottom: 40px;
 
         p {
-        color: $material-yellow;
-        line-height: 1.5em;
+            color: $material-yellow;
+            line-height: 1.5em;
 
         }
+
         h1 {
             color: $material-purple;
             // font-size: 30px;
@@ -398,11 +399,11 @@ html {
         padding-top: 20px;
         color: $material-purple;
         padding-left: 20px;
-        width: 40%; 
+        width: 40%;
 
 
         h2 {
-        font-weight: 200;
+            font-weight: 200;
         }
     }
 }
@@ -428,13 +429,19 @@ html {
         // text-align: center;
 
         li {
-            color: $material-grey;
-            padding: 5px;
+            padding: 5px 0;
             cursor: pointer;
 
-            &:hover {
-                color: $material-yellow;
+            a {
+                color: $material-grey;
+                text-decoration: none;
+
+
+                &:hover {
+                    color: $material-yellow;
+                }
             }
+
         }
     }
 }
@@ -459,13 +466,18 @@ html {
         // text-align: center;
 
         li {
-            color: $material-grey;
             padding: 5px;
             cursor: pointer;
 
-            &:hover {
-                color: $material-yellow;
+            a {
+                color: $material-grey;
+                text-decoration: none;
+
+                &:hover {
+                    color: $material-yellow;
+                }
             }
+
         }
     }
 }
@@ -489,16 +501,21 @@ html {
         justify-content: flex-end;
         flex-direction: column;
         // text-align: center;
-        
+
 
         li {
             padding: 5px;
-            color: $material-grey;
             cursor: pointer;
 
-            &:hover {
-                color: $material-yellow;
+            a {
+                color: $material-grey;
+                text-decoration: none;
+
+                &:hover {
+                    color: $material-yellow;
+                }
             }
+
         }
 
     }

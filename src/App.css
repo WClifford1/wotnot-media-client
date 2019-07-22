@@ -223,12 +223,16 @@
 }
 
 .nav .logo {
-  color: #7d7ebe;
   text-align: center;
   padding-top: 11px;
   width: 50%;
   padding-right: 100px;
   z-index: 2;
+}
+
+.nav .logo a {
+  color: #7d7ebe;
+  text-decoration: none;
 }
 
 .nav .nav-items {
@@ -416,10 +420,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 10px;
 }
 
 .accordion {
-  background-color: #eee;
+  background-color: #7d7ebe;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -433,11 +438,13 @@
   outline: none;
   -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .accordion:hover,
 .active {
-  background-color: #ccc;
+  background-color: #f0ac39;
 }
 
 .accordion__title {
@@ -1119,12 +1126,16 @@ html {
 }
 
 .footer-res1 .footer-links1 li {
-  color: #bab0ba;
-  padding: 5px;
+  padding: 5px 0;
   cursor: pointer;
 }
 
-.footer-res1 .footer-links1 li:hover {
+.footer-res1 .footer-links1 li a {
+  color: #bab0ba;
+  text-decoration: none;
+}
+
+.footer-res1 .footer-links1 li a:hover {
   color: #f0ac39;
 }
 
@@ -1152,12 +1163,16 @@ html {
 }
 
 .footer-res2 .footer-links2 li {
-  color: #bab0ba;
   padding: 5px;
   cursor: pointer;
 }
 
-.footer-res2 .footer-links2 li:hover {
+.footer-res2 .footer-links2 li a {
+  color: #bab0ba;
+  text-decoration: none;
+}
+
+.footer-res2 .footer-links2 li a:hover {
   color: #f0ac39;
 }
 
@@ -1186,11 +1201,15 @@ html {
 
 .footer-res3 .footer-links3 li {
   padding: 5px;
-  color: #bab0ba;
   cursor: pointer;
 }
 
-.footer-res3 .footer-links3 li:hover {
+.footer-res3 .footer-links3 li a {
+  color: #bab0ba;
+  text-decoration: none;
+}
+
+.footer-res3 .footer-links3 li a:hover {
   color: #f0ac39;
 }
 
