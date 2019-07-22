@@ -91,7 +91,7 @@ export default class EnquiryForm extends Component {
             enquiry: this.state.enquiry
         }
 
-        axios.post('http://localhost:4000/api/enquiries', newEnquiry)
+        axios.post('https://wotnotmedia.herokuapp.com/api/enquiries', newEnquiry)
             .then(res => console.log(res.data))
 
         this.setState({
