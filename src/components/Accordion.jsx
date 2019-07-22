@@ -1,0 +1,14 @@
+import React from 'react'
+
+export default function Accordion(props) {
+    return (
+        <div className="accordion__section">
+            <button className="accordion">
+                <p className="accordion__title">{props.title}</p>
+            </button>
+            <div className="accordion__content">
+                <div className="accordion__text" aangerouslySetInnerHTML={{ __html: props.content }} />
+            </div>
+        </div>
+    )
+}

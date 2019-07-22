@@ -274,6 +274,11 @@
   transition: width .3s;
 }
 
+.contact-cont {
+  border: 2px solid red;
+  background-image: url("https://www.psdgraphics.com/file/abstract-hair-background.jpg");
+}
+
 .contact-cont .contact-header {
   display: -webkit-box;
   display: -ms-flexbox;
