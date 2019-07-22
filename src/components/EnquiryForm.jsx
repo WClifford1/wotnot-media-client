@@ -67,11 +67,6 @@ export default class EnquiryForm extends Component {
     onSubmit(e) {
         e.preventDefault()
 
-        if (this.state.isVerified) {
-            alert('You have sent your enquiry')
-        } else {
-            alert('Please verify that you are human')
-        }
 
         const errors = this.validate()
         console.log(errors)
