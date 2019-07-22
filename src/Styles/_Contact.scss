@@ -33,14 +33,16 @@ $off-black: #322645;
         // border: 2px solid turquoise;
         display: flex;
         justify-content: center;
+        text-align: center;
+        padding: 40px;
     }
 
     .contact-form {
         // border: 2px solid blue;
         display: flex; 
-        justify-content: center;
+        // justify-content: center;
         flex-direction: column;
-        text-align: center;
+        // text-align: center;
         width: 100%;
 
         h2 {
@@ -91,8 +93,10 @@ $off-black: #322645;
     
     .contact-details {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         width: 100%;
+        text-align: center;
+        justify-content: center;
         // border: 2px solid red;
         
 
