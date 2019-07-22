@@ -7,7 +7,7 @@ export default function Accordion(props) {
                 <p className="accordion__title">{props.title}</p>
             </button>
             <div className="accordion__content">
-                <div className="accordion__text" aangerouslySetInnerHTML={{ __html: props.content }} />
+                <div className="accordion__text" dangerouslySetInnerHTML={{ __html: props.content }} />
             </div>
         </div>
     )
