@@ -14,7 +14,7 @@ export default function ServicePage() {
                 <img src={map} alt=""/>
                 </div>
                 <div className="serv1-text">
-                    <h4>Photography</h4>
+                    <h4>Print</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, corporis.</p>
                 </div>
             </div>

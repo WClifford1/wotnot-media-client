@@ -13,7 +13,7 @@ export default function Service2() {
                 {/* <i className="fas fa-camera fa-5x" aria-hidden="true"></i> */}
                 <img src={photo} className="blob" alt="hoohaa" />                    
                 <div className="serves1-text">
-                    <h3>Photography</h3>
+                    <h3>Print</h3>
                 </div>
             </div>
             <div className="serves2">
