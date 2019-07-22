@@ -67,11 +67,6 @@ export default class EnquiryForm extends Component {
     onSubmit(e) {
         e.preventDefault()
 
-        if (this.state.isVerified) {
-            alert('You have sent your enquiry')
-        } else {
-            alert('Please verify that you are human')
-        }
 
         const errors = this.validate()
         console.log(errors)
@@ -91,7 +86,7 @@ export default class EnquiryForm extends Component {
             enquiry: this.state.enquiry
         }
 
-        axios.post('http://localhost:4000/api/enquiries', newEnquiry)
+        axios.post('https://wotnotmedia.herokuapp.com/api/enquiries', newEnquiry)
             .then(res => console.log(res.data))
 
         this.setState({
