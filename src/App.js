@@ -14,6 +14,9 @@ import Terms from './components/Terms';
 import Privacy from './components/Privacy';
 import jwtDecode from 'jwt-decode'
 import './/App.css'
+import Print from './components/Print';
+import WebDesign from './components/WebDesign';
+import Video from './components/Video';
 
 
 export default class App extends Component {
@@ -48,6 +51,9 @@ export default class App extends Component {
         <Route path="/bookings" component={BookingForm} />
         <Route path="/termsandconditions" component={Terms} />
         <Route path="/privacy" component={Privacy} />
+        <Route path="/print" component={Print} />
+        <Route path="/web" component={WebDesign} />
+        <Route path="/video" component={Video} />
       </Switch>
       <Footer />
       {/* <EnquiryForm /> */}
