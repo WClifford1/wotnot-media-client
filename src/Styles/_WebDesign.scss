@@ -1,0 +1,35 @@
+$off-white: #fcf7f8;
+$dark-blue: #211c4f;
+$material-grey: #bab0ba;
+$material-pink: #d98d91;
+$material-purple: #7d7ebe;
+$material-red: #eb561a;
+$material-yellow: #f0ac39;
+$off-black: #322645;
+
+
+.web-cont {
+    
+    // border: 2px solid #008000;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+
+    .web-title {
+        color: $material-purple;    
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .web-text {
+        display: flex;
+        justify-content: center;
+        color: $material-grey;
+        padding: 20px;
+        line-height: 1.5em;
+        // border: 2px solid red;
+        justify-content: center;
+
+    }
+}
