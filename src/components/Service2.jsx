@@ -1,7 +1,7 @@
 import React from 'react'
-import photo from '../images/photo.svg'
-import video from '../images/video.svg'
-import internet from '../images/internet.svg'
+import print from '../images/print.svg'
+import video from '../images/video1.svg'
+import internet from '../images/int.svg'
 
 export default function Service2() {
     return (
@@ -11,9 +11,9 @@ export default function Service2() {
         <div className="serves-cont">
             <div className="serves1">
                 {/* <i className="fas fa-camera fa-5x" aria-hidden="true"></i> */}
-                <img src={photo} className="blob" alt="hoohaa" />                    
+                <img src={print} className="blob" alt="hoohaa" />                    
                 <div className="serves1-text">
-                    <h3>Print</h3>
+                    <h3>PRINT</h3>
                 </div>
             </div>
             <div className="serves2">

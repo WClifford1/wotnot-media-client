@@ -89,6 +89,7 @@ html {
 
     .image-home {
         // border: 2px solid red;
+        position: relative;
             
 
         .blob {
@@ -107,8 +108,8 @@ html {
         
         .comp-img {
             position: absolute;
-            top:60px;
-            right: 80px;
+            top: -20px;
+            right: 90px;
 
             img {
             padding-top: 100px;
@@ -128,15 +129,16 @@ html {
         justify-content: center;
         align-items: center;
         padding-bottom: 80px;
+        padding-top: 80px;
         z-index: 2;
 
         h1 {
             display: flex;
             // border:2px solid blue;
-            width: 95%;
+            width: 75%;
             justify-content: center;
             align-content: center;
-            padding: $title-pad;
+            padding: 30px;
             color: $material-purple;
             font-weight: 100;
         }
@@ -144,7 +146,7 @@ html {
         p {
             display: flex;
             // border: 2px solid green;
-            width: 95%;
+            width: 60%;
             justify-content: center;
             align-content: center;
             text-align: center;
@@ -152,7 +154,7 @@ html {
         }
 
         .hbtn-cont {
-            padding: $title-pad;
+            padding: 30px;
 
             .hero-btn {
                 border-radius: 40px;
@@ -276,10 +278,32 @@ html {
     background-color: #fff;
     padding-bottom: 30px;
 
+    .pic-cont {
+        position: relative;
+
     .help-blob {
         position: relative;
-        left: -200px;
+        left: -10px;
+        bottom: 15px;
+
+        img {
+            height: 500px;
+        }
     }
+
+        .light-img {
+            position: absolute;
+            top: 30px;
+            left: 40px;
+
+            img {
+                height: 400px;
+            }
+
+        }
+    
+
+}
 
     .help-text {
         // border:2px solid red;

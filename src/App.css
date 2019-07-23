@@ -868,6 +868,10 @@ html {
   display: flex;
 }
 
+.nav-cont .hero-image .image-home {
+  position: relative;
+}
+
 .nav-cont .hero-image .image-home .blob {
   position: relative;
   top: 0;
@@ -880,8 +884,8 @@ html {
 
 .nav-cont .hero-image .image-home .comp-img {
   position: absolute;
-  top: 60px;
-  right: 80px;
+  top: -20px;
+  right: 90px;
 }
 
 .nav-cont .hero-image .image-home .comp-img img {
@@ -904,6 +908,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 80px;
+  padding-top: 80px;
   z-index: 2;
 }
 
@@ -911,13 +916,13 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 95%;
+  width: 75%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 40px;
+  padding: 30px;
   color: #7d7ebe;
   font-weight: 100;
 }
@@ -926,7 +931,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 95%;
+  width: 60%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -937,7 +942,7 @@ html {
 }
 
 .nav-cont .hero-text .hbtn-cont {
-  padding: 40px;
+  padding: 30px;
 }
 
 .nav-cont .hero-text .hbtn-cont .hero-btn {
@@ -1054,9 +1059,28 @@ html {
   padding-bottom: 30px;
 }
 
-.help-cont .help-blob {
+.help-cont .pic-cont {
   position: relative;
-  left: -200px;
+}
+
+.help-cont .pic-cont .help-blob {
+  position: relative;
+  left: -10px;
+  bottom: 15px;
+}
+
+.help-cont .pic-cont .help-blob img {
+  height: 500px;
+}
+
+.help-cont .pic-cont .light-img {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+.help-cont .pic-cont .light-img img {
+  height: 400px;
 }
 
 .help-cont .help-text {
