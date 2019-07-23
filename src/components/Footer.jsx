@@ -1,7 +1,29 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react'
+import { Link, Redirect } from 'react-router-dom'
+import jwtDecode from 'jwt-decode'
 
-export default function Footer() {
+
+export default class Footer extends Component {
+
+
+    state = {}
+    
+
+    componentDidMount() {
+        try {
+        const jwt = localStorage.getItem("token")
+        const user = jwtDecode(jwt)
+        this.setState( { user })
+        } catch(err) {}
+    }
+
+    logout() {
+        localStorage.removeItem('token')
+        window.location = '/'
+    }
+
+
+    render() {
     return (
         <div>
             <div className="footer-cont">
@@ -20,29 +42,25 @@ export default function Footer() {
                 </div>
 
                 <div className="footer-res2">
+
                     <div className="footer-title2">
                         <h3>Information</h3>
                     </div>
+
                     <div className="footer-links2">
                         <li><Link to="/Faq">FAQ</Link></li>
                         <li><Link to="termsandconditions">Terms & Conditions</Link></li>
                         <li><Link to="/privacy">Privacy Policy</Link></li>
                         <li><Link to="/contact">Contact Information</Link></li>
+                            {!this.state.user &&
+                            <li><Link to="/login">Staff Portal</Link></li>}
+                            {this.state.user &&
+                            <React.Fragment><Link to="/dashboard"><li>DASHBOARD</li></Link>
+                            <li onClick={this.logout}>LOGOUT</li></React.Fragment>
+                            }
                     </div>
                 </div>
-
-                <div className="footer-res3">
-                    <div className="footer-title3">
-                        <h3>Get Started</h3>
-                    </div>
-                    <div className="footer-links3">
-                        <li><Link to="/enquiries">Enquiry</Link></li>
-                        <li><Link to="/bookings">Booking</Link></li>
-                    </div>
+                </div>
                 </div>
 
-
-            </div>
-        </div>
-    )
-}
+)} }

@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { register } from './UserService'
 import axios from 'axios'
 
+
 export default class RegisterForm extends Component {
+
 
     constructor(props) {
         super(props)
@@ -10,20 +11,22 @@ export default class RegisterForm extends Component {
         this.onChange = this.onChange.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
 
-    this.state = {
-        account: {
-            name: '',
-            password: ''
+        this.state = {
+            account: {
+                name: '',
+                password: ''
+            }
         }
     }
-}
     
+
     onChange = e => {
         const account = {...this.state.account}
         account[e.currentTarget.name] = e.currentTarget.value
         this.setState({ account })
     }
     
+
     onSubmit = e => {
         e.preventDefault()
         // Call the server
@@ -32,9 +35,11 @@ export default class RegisterForm extends Component {
             password: this.state.account.password
         }
         
+    
         axios.post('http://localhost:4000/api/users', newUser)
             .then(res => console.log(res.data))
         
+            
         this.setState({
             account: {
             name: '',
@@ -44,11 +49,7 @@ export default class RegisterForm extends Component {
     }
 
 
-
-
     render() {
-        
-
         return (
             <div>
                 <h1>Register</h1>    
