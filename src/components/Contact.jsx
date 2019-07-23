@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import map from '../images/map.jpg'
-import contact from '../images/contactpic.svg'
+import contact from '../images/contact.svg'
 
 export default class Contact extends Component {
     constructor(props) {
