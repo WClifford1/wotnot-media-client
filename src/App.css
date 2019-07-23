@@ -868,8 +868,25 @@ html {
   display: flex;
 }
 
-.nav-cont .hero-image .blob {
-  height: 100%;
+.nav-cont .hero-image .image-home .blob {
+  position: relative;
+  top: 0;
+  right: 0px;
+}
+
+.nav-cont .hero-image .image-home .blob img {
+  height: 500px;
+}
+
+.nav-cont .hero-image .image-home .comp-img {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+}
+
+.nav-cont .hero-image .image-home .comp-img img {
+  padding-top: 100px;
+  height: 350px;
 }
 
 .nav-cont .hero-text {

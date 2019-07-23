@@ -77,16 +77,50 @@ html {
 
     .hero-image {
         display: flex;
+    //     // border: 2px solid red;
+
+    //     .blob {
+    //         // border: 2px solid green;
+    //         height: 100%;
+            
+    //     }
+
+    // ----------------------------------------
+
+    .image-home {
         // border: 2px solid red;
+            
 
         .blob {
+            position: relative;
+            top: 0;
+            right: 0px;
+
+            img {
             // border: 2px solid green;
-            height: 100%;
-            // border: 2px solid red;
-            // padding-bottom: 20px;
+            height: 500px;
+            }
+
+        
+           
         }
+        
+        .comp-img {
+            position: absolute;
+            top:60px;
+            right: 80px;
+
+            img {
+            padding-top: 100px;
+            height: 350px;
+            }
+        }
+     
     }
 
+    }
+
+  
     .hero-text {
 
         display: flex;
