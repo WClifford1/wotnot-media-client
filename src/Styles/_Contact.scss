@@ -115,6 +115,22 @@ $off-black: #322645;
         }
 
     }
+
+    .contact-pic {
+        display: flex;
+        justify-content: center;
+        left: 80px;
+
+        img{
+        width: 90%;
+        height: 300px;
+        // border: 2px solid blue;
+        }
+    }
+
+
+
+    // -------------------------
     
     .contact-details {
         display: flex;
@@ -130,6 +146,8 @@ $off-black: #322645;
             text-align: center;
             flex-direction: column;
             width: 45%;
+            
+
 
             // border: 2px solid red;
         }
@@ -138,7 +156,6 @@ $off-black: #322645;
             height: 200px;
             border-radius: 5px 5px 0 0;
             border: 1px solid rgb(189, 187, 187);
-
         }
 
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import map from '../images/map.jpg'
+import contact from '../images/contactpic.svg'
 
 export default class Contact extends Component {
     constructor(props) {
@@ -113,25 +114,10 @@ export default class Contact extends Component {
                     </form>
                 </div>
 
-            <div className="contact-details">
-                <div className="contact-card">
-                <img src={map} alt="Map location"/>
-                <div className="admin-details">
-                <div className="cont-name">
-                    <h5>Name: Steve Worby</h5>
+                <div className="contact-pic">
+                    <img src={contact} alt=""/>
                 </div>
-                <div className="cont-email">
-                    <h5>Email: wotnotmedia@gmail.com</h5>
-                </div>
-                <div className="cont-work">
-                    <h5>Work Num: 1300 393 851</h5>
-                </div>
-                <div className="cont-mobil">
-                    <h5>Mobile: +61 404 698 115 </h5>
-                    </div>
-                </div>
-                </div>
-            </div>
+
             </div>
             </div>
         )
