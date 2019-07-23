@@ -66,17 +66,19 @@ export default class Contact extends Component {
     render() {
         return (
             <div className="contact-cont">
-                <div className="contact-header">
+                {/* <div className="contact-header">
                     <h1>Contact Us</h1>
-                    {/* <h2>We'd love to hear from you!</h2> */}
-                </div>
+                    <h2>We'd love to hear from you!</h2>
+                </div> */}
               
 
                 <div className="contact-page">
                 <div className="contact-form">
-                {/* <div className="contact-title">
-                    <h2>Contact Form</h2>
-                </div> */}
+                <div className="contact-title">
+                    <h1>Drop us a line</h1>
+                </div>
+
+
                     <form onSubmit={this.onSubmit}>
                         <div className="contact-text">
                             <label><strong>Name :</strong></label>
