@@ -73,9 +73,9 @@ export default class Contact extends Component {
 
                 <div className="contact-page">
                 <div className="contact-form">
-                <div className="contact-title">
+                {/* <div className="contact-title">
                     <h2>Contact Form</h2>
-                </div>
+                </div> */}
                     <form onSubmit={this.onSubmit}>
                         <div className="contact-text">
                             <label><strong>Name :</strong></label>
@@ -83,7 +83,7 @@ export default class Contact extends Component {
                         <div className="contact-input">
                             <input type="text" className="contact-control"
                                 value={this.state.name}
-                                onChange={this.onChangeName} />
+                                onChange={this.onChangeName} placeholder="Enter phone name here" />
                         </div>
 
 
@@ -93,7 +93,7 @@ export default class Contact extends Component {
                         <div className="contact-input">
                             <input type="text" className="contact-control"
                                 value={this.state.email}
-                                onChange={this.onChangeEmail} />
+                                onChange={this.onChangeEmail} placeholder="Enter phone email here" />
                         </div>
 
                         <div className="contact-text">
@@ -102,7 +102,7 @@ export default class Contact extends Component {
                         <div className="contact-input">
                             <input type="text" className="contact-control"
                                 value={this.state.phone}
-                                onChange={this.onChangePhone} />
+                                onChange={this.onChangePhone} placeholder="Enter phone number here" />
                         </div>
 
                         <div className="contact-btn">

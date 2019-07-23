@@ -62,8 +62,8 @@ $off-black: #322645;
             display: flex;
             
             label {
-                width: 50%;
-                padding: 5px 0 5px 0;
+                // width: 50%;
+                padding: 5px;
             }
         }
 
@@ -74,12 +74,30 @@ $off-black: #322645;
             width: 100%;
             padding: 5px;  
 
-            .contact-control {
-                width: 60%;
-                padding: 5px;
-                border-radius: 5px;
-                border: 1px solid grey;
+            input {
+                width: 100%;
+                margin: 20px 0;
+                background: rgba(0,0,0,0);
+                border: none;
+                border-bottom: 1px solid $material-grey;
             }
+            
+            // #msg {
+            //     margin-top: 60px;
+            // }
+            
+            ::-webkit-input-placeholder {
+                color: rgb(204, 204, 204);
+                font-size: 14px;
+                letter-spacing: 2px;
+            }
+
+            // .contact-control {
+            //     width: 60%;
+            //     padding: 5px;
+            //     border-radius: 5px;
+            //     border: 1px solid grey;
+            // }
         }
 
         

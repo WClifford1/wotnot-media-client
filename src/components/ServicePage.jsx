@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function TestCard() {
     return (
-        <React.Fragment>
+        <div className="servy-cont">
         <div className="servy-title">
             <h1>Services Page</h1>
         </div>
@@ -59,6 +59,6 @@ export default function TestCard() {
           
           </section>
           </div>
-          </React.Fragment>
+          </div>
             )
         }

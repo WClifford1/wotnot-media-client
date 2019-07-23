@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Home from './components/Home';
-import Guarantee from './components/Guarantee';
 import Card1 from './components/Card1'; 
 import EnquiryForm from './components/EnquiryForm';
 import BookingForm from './components/BookingForm';
@@ -17,7 +16,7 @@ import './/App.css'
 import Print from './components/Print';
 import WebDesign from './components/WebDesign';
 import Video from './components/Video';
-import TestCard from './components/TestCard';
+import TestContact from './components/TestContact';
 
 
 export default class App extends Component {
@@ -57,6 +56,8 @@ export default class App extends Component {
         <Route path="/video" component={Video} />
       </Switch>
       <Footer />
+
+      
       {/* <EnquiryForm /> */}
       {/* {!this.state.user && 
       <Login user={this.state.user} />
