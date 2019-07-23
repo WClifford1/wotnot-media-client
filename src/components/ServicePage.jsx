@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function ServicePage() {
     return (
-        <div>
+        <div className="servp-cont">
             <div className="servp-title">
                 <h1>Services</h1>
             </div>
