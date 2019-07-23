@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Privacy() {
     return (
-        <div>
+        <div className="priv-cont">
             <h1>Privacy Policy</h1>
 
 

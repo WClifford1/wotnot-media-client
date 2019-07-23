@@ -7,7 +7,7 @@ $material-red: #eb561a;
 $material-yellow: #f0ac39;
 $off-black: #322645;
 
-.term-cont {
+.priv-cont {
     display: flex;
     flex-direction: column;
     padding: 40px;
@@ -19,6 +19,16 @@ $off-black: #322645;
         padding: 10px 0 40px 0;
         font-weight: 300;
         font-size: 40px;
+    }
+
+    li {
+        color: $material-grey;
+        padding: 10px;
+    }
+
+    h4 {
+        color: $material-grey;
+        padding: 10px;
     }
 
     h2 {
