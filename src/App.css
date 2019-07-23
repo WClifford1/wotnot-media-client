@@ -280,31 +280,34 @@
   transition: width .3s;
 }
 
-.contact-cont {
-  border: 2px solid red;
-  background-image: url("https://www.psdgraphics.com/file/abstract-hair-background.jpg");
-}
-
 .contact-cont .contact-header {
+  padding: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #7d7ebe;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ECF6FB;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  padding: 15px;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-cont .contact-header h1 {
-  padding: 10px;
-  color: #7d7ebe;
+  font-size: 50px;
+  font-weight: 100;
 }
 
 .contact-cont .contact-header h2 {
-  padding: 10px;
   color: #f0ac39;
+  font-weight: 100;
 }
 
 .contact-cont .contact-page {
@@ -483,185 +486,197 @@
   margin: 0 auto;
 }
 
-.servp-title {
+.servy-title {
+  padding: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #7d7ebe;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ECF6FB;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.servy-title h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #7d7ebe;
-  padding: 20px;
+  font-size: 50px;
+  font-weight: 100;
 }
 
-.serv-offered {
+.cards-cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.serv-offered .serv-1 {
-  width: 20%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 40px;
 }
 
-.serv-offered .serv-1:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.serv-offered .serv-1 .serv1-img {
-  border: 1px solid grey;
-  border-radius: 5px 5px 0 0;
-}
-
-.serv-offered .serv-1 .serv1-img img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.cards {
   width: 100%;
-}
-
-.serv-offered .serv-1 .serv1-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 20px;
-  border: 1px solid grey;
-  border-radius: 0 0 5px 5px;
-  background: #fff;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  max-width: 820px;
 }
 
-.serv-offered .serv-1 .serv1-text h4 {
-  text-align: center;
-  padding: 5px;
-  color: #d98d91;
+.card--1 .card__img, .card--1 .card__img--hover {
+  background-image: url("https://www.coreprinting.co.uk/wp-content/uploads/2016/10/Bond-Flyers-Leaflets-Core-Printing....jpg");
 }
 
-.serv-offered .serv-1 .serv1-text p {
-  text-align: center;
-  line-height: 1.3em;
+.card--2 .card__img, .card--2 .card__img--hover {
+  background-image: url("https://www.istudiotech.in/wp-content/uploads/2019/05/webdesign-2.png");
+  background-color: #211c4f;
 }
 
-.serv-offered .serv-2 {
-  width: 20%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 40px;
+.card--3 .card__img, .card--3 .card__img--hover {
+  background-image: url("https://polkadotbride2017-sngywbwcq2xgokujesdfdv3cusxse3.netdna-ssl.com/wp-content/uploads/2013/06/beautiful-ballarat-wedding37.jpg");
+  background-color: #eb561a;
 }
 
-.serv-offered .serv-2:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.card__like {
+  width: 18px;
 }
 
-.serv-offered .serv-2 .serv2-img {
-  border: 1px solid grey;
-  border-radius: 5px 5px 0 0;
+.card__clock {
+  width: 15px;
+  vertical-align: middle;
+  fill: #AD7D52;
 }
 
-.serv-offered .serv-2 .serv2-img img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.card__time {
+  font-size: 12px;
+  color: #AD7D52;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.card__clock-info {
+  float: right;
+}
+
+.card__img {
+  visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
-.serv-offered .serv-2 .serv2-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 20px;
-  border: 1px solid grey;
-  border-radius: 0 0 5px 5px;
-  background: #fff;
-}
-
-.serv-offered .serv-2 .serv2-text h4 {
-  text-align: center;
-  padding: 5px;
-  color: #d98d91;
-}
-
-.serv-offered .serv-2 .serv2-text p {
-  text-align: center;
-  line-height: 1.3em;
-}
-
-.serv-offered .serv-3 {
-  width: 20%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 40px;
-}
-
-.serv-offered .serv-3:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.serv-offered .serv-3 .serv3-img {
-  border: 1px solid grey;
-  border-radius: 5px 5px 0 0;
-}
-
-.serv-offered .serv-3 .serv3-img img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.card__info-hover {
+  position: absolute;
+  padding: 16px;
   width: 100%;
+  opacity: 0;
+  top: 0;
 }
 
-.serv-offered .serv-3 .serv3-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 20px;
-  border: 1px solid grey;
-  border-radius: 0 0 5px 5px;
-  background: #fff;
+.card__img--hover {
+  -webkit-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
 }
 
-.serv-offered .serv-3 .serv3-text h4 {
-  text-align: center;
-  padding: 5px;
-  color: #d98d91;
+.card {
+  margin-right: 25px;
+  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
 }
 
-.serv-offered .serv-3 .serv3-text p {
-  text-align: center;
-  line-height: 1.3em;
+.card:hover {
+  -webkit-box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.card__info {
+  z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.card__by {
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.card__author {
+  font-weight: 600;
+  text-decoration: none;
+  color: #AD7D52;
+}
+
+.card:hover .card__img--hover {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.card:hover .card__info {
+  background-color: transparent;
+  position: relative;
+}
+
+.card:hover .card__info-hover {
+  opacity: 1;
 }
 
 .print-cont {
@@ -832,167 +847,6 @@
 .priv-cont p {
   color: #bab0ba;
   line-height: 1.5em;
-}
-
-.cards-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: -webkit-flex;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 40px;
-}
-
-.cards {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: -webkit-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-justify-content: center;
-  max-width: 820px;
-}
-
-.card--1 .card__img, .card--1 .card__img--hover {
-  background-image: url("https://www.coreprinting.co.uk/wp-content/uploads/2016/10/Bond-Flyers-Leaflets-Core-Printing....jpg");
-}
-
-.card--2 .card__img, .card--2 .card__img--hover {
-  background-image: url("https://www.istudiotech.in/wp-content/uploads/2019/05/webdesign-2.png");
-  background-color: #eb561a;
-}
-
-.card__like {
-  width: 18px;
-}
-
-.card__clock {
-  width: 15px;
-  vertical-align: middle;
-  fill: #AD7D52;
-}
-
-.card__time {
-  font-size: 12px;
-  color: #AD7D52;
-  vertical-align: middle;
-  margin-left: 5px;
-}
-
-.card__clock-info {
-  float: right;
-}
-
-.card__img {
-  visibility: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 235px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-.card__info-hover {
-  position: absolute;
-  padding: 16px;
-  width: 100%;
-  opacity: 0;
-  top: 0;
-}
-
-.card__img--hover {
-  -webkit-transition: 0.2s all ease-out;
-  transition: 0.2s all ease-out;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  position: absolute;
-  height: 235px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  top: 0;
-}
-
-.card {
-  margin-right: 25px;
-  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
-  background-color: #fff;
-  width: 33.3%;
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  -webkit-box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
-}
-
-.card:hover {
-  -webkit-box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-}
-
-.card__info {
-  z-index: 2;
-  background-color: #fff;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  padding: 16px 24px 24px 24px;
-}
-
-.card__category {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  color: #868686;
-}
-
-.card__title {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-family: 'Roboto Slab', serif;
-}
-
-.card__by {
-  font-size: 12px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-}
-
-.card__author {
-  font-weight: 600;
-  text-decoration: none;
-  color: #AD7D52;
-}
-
-.card:hover .card__img--hover {
-  height: 100%;
-  opacity: 0.3;
-}
-
-.card:hover .card__info {
-  background-color: transparent;
-  position: relative;
-}
-
-.card:hover .card__info-hover {
-  opacity: 1;
 }
 
 * {

@@ -55,7 +55,6 @@ export default class App extends Component {
         <Route path="/print" component={Print} />
         <Route path="/web" component={WebDesign} />
         <Route path="/video" component={Video} />
-        <Route path="/test" component={TestCard} />
       </Switch>
       <Footer />
       {/* <EnquiryForm /> */}

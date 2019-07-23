@@ -67,7 +67,7 @@ export default class Contact extends Component {
             <div className="contact-cont">
                 <div className="contact-header">
                     <h1>Contact Us</h1>
-                    <h2>We'd love to hear from you!</h2>
+                    {/* <h2>We'd love to hear from you!</h2> */}
                 </div>
               
 

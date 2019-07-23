@@ -1,52 +1,64 @@
 import React from 'react'
-import map from '../images/map.jpg'
-import { Link } from 'react-router-dom'
 
-export default function ServicePage() {
+export default function TestCard() {
     return (
-        <div className="servp-cont">
-            <div className="servp-title">
-                <h1>Services</h1>
-            </div>
-            <div className="serv-offered">
-
-                <div className="serv-1">
-                    <div className="serv1-img">
-                        <img src={map} alt="" />
-                    </div>
-                    <div className="serv1-text">
-                        <Link to="/print">
-                            <h4>Print</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, corporis.</p>
-                        </Link>
-                    </div>
-                </div>
-
-                <div className="serv-2">
-                    <div className="serv2-img">
-                        <img src={map} alt="" />
-                    </div>
-                    <div className="serv2-text">
-                        <Link to="/video">
-                        <h4>Video</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, corporis.</p>
-                        </Link>
-                    </div>
-                </div>
-
-                <div className="serv-3">
-                    <div className="serv3-img">
-                        <img src={map} alt="" />
-                    </div>
-                    <div className="serv3-text">
-                        <Link to="/web">
-                        <h4>Web Design</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, corporis.</p>
-                        </Link>
-                    </div>
-                </div>
-
-            </div>
+        <React.Fragment>
+        <div className="servy-title">
+            <h1>Services Page</h1>
         </div>
-    )
-}
+        <div className="cards-cont">
+        <section class="cards">
+        <article class="card card--1">
+          {/* <div class="card__info-hover">
+             
+            
+          </div> */}
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+             <div class="card__img--hover"></div>
+           </a>
+          <div class="card__info">
+            <span class="card__category">Print</span>
+            <h3 class="card__title">Professional Printing Services</h3>
+            <span class="card__by">by <a href="#" class="card__author" title="author">Wotnot Media</a></span>
+          </div>
+        </article>
+          
+          
+        <article class="card card--2">
+          {/* <div class="card__info-hover">
+            
+          </div> */}
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+             <div class="card__img--hover"></div>
+           </a>
+          <div class="card__info">
+            <span class="card__category">Web Design</span>
+            <h3 class="card__title">Innovative Web Solutions</h3>
+            <span class="card__by">by <a href="#" class="card__author" title="author">Wotnot Media</a></span>
+          </div>
+        </article>  
+
+        <article class="card card--3">
+          {/* <div class="card__info-hover">
+            
+          </div> */}
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+             <div class="card__img--hover"></div>
+           </a>
+          <div class="card__info">
+            <span class="card__category">Video Content</span>
+            <h3 class="card__title">Save Your Precious Moments</h3>
+            <span class="card__by">by <a href="#" class="card__author" title="author">Wotnot Media</a></span>
+          </div>
+        </article>  
+          
+          
+          
+          </section>
+          </div>
+          </React.Fragment>
+            )
+        }

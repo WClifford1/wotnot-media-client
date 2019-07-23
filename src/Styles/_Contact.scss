@@ -8,25 +8,31 @@ $material-yellow: #f0ac39;
 $off-black: #322645;
 
 .contact-cont {
-    border: 2px solid red;
-    background-image: url("https://www.psdgraphics.com/file/abstract-hair-background.jpg");
+    // border: 2px solid red;
+    // background-color: $off-white;
+    // background-image: url("https://www.psdgraphics.com/file/abstract-hair-background.jpg");
 
     .contact-header {
         // border: 2px solid green;
+        padding: 35px;
         display: flex;
+        color: $material-purple;
+        // text-align: center;
+        justify-content: center;
+        background-color: #ECF6FB;
         flex-direction: column;
-        text-align: center;
-        padding: 15px;
-        
+        height: 80px;
+        align-items: center;
 
-        h1 {
-            padding: 10px;
-            color: $material-purple;
+        h1 { 
+            font-size: 50px;
+            font-weight: 100;
         }
 
         h2 {
-            padding: 10px;
+            // padding: 10px;
             color: $material-yellow;
+            font-weight: 100;
         }
     }
 
