@@ -849,6 +849,45 @@
   line-height: 1.5em;
 }
 
+.showcase-cont {
+  padding: 40px;
+  border: 2px solid red;
+}
+
+.showcase-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
+  color: #7d7ebe;
+}
+
+.showcase-title h1 {
+  font-weight: 100;
+  font-size: 32px;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 0px;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;

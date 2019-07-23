@@ -6,7 +6,7 @@ import internet from '../images/int.svg'
 export default function Service2() {
     return (
         <React.Fragment>
-        <h1 className="serves-title">Services</h1>
+        <h1 className="serves-title">SERVICES</h1>
 
         <div className="serves-cont">
             <div className="serves1">

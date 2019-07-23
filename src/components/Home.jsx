@@ -5,6 +5,7 @@ import HowWeHelp from './HowWeHelp'
 import Service2 from './Service2';
 import WhyUs from './WhyUs'
 import comp from '../images/comp.svg'
+import Showcase from './Showcase';
 
 
 export default function Home() {
@@ -55,7 +56,7 @@ export default function Home() {
                 <Service2 />
                 <HowWeHelp />
                 <WhyUs />
-
+                <Showcase />
             </div>
         </Router>
     )
