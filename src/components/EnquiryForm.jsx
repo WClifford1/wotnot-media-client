@@ -26,9 +26,12 @@ export default class EnquiryForm extends Component {
 
     validate = () => {
         const errors = {}
-        if (this.state.name.trim() === "")
-        errors.name = "Name is required"
-        return Object.keys(errors).length === 0 ? null : errors
+        if (this.state.name.trim().length < 1 || this.state.name.trim().length > 20){
+        errors.name = "Name must be between 1 and 20 characters"
+        if (this.state.email.trim().length < 1 || this.state.name.trim().length > 50){
+            errors.email = "Email must be between 1 and 50 characters"
+        }
+        return Object.keys(errors).length === 0 ? null : errors }
     }
 
 
@@ -115,6 +118,7 @@ export default class EnquiryForm extends Component {
                             <input type="text" className="form-control" placeholder="Insert your name here"
                             value={this.state.name}
                             onChange={this.onChangeName} />
+                            {this.state.errors.name && <h1>{this.state.errors.name}</h1>}
                         </div>
 
                         <div className="form-text">
@@ -126,6 +130,7 @@ export default class EnquiryForm extends Component {
                             value={this.state.email}
                             onChange={this.onChangeEmail} />
                         </div>
+                        {this.state.errors.email && <h1>{this.state.errors.email}</h1>}
 
                         <div className="form-text">
                             <label><strong>Phone : </strong></label>
@@ -140,7 +145,7 @@ export default class EnquiryForm extends Component {
                         <div className="form-text">
                             <label><strong>Enquiry <span style={{ color: "red" }}>*</span> : </strong></label>
                         </div>
-
+                        
                         <div className="form-input">
                             <textarea type="text" className="form-control" placeholder="Insert your query here"
                             value={this.state.enquiry}
