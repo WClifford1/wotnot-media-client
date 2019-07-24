@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
@@ -1121,10 +1120,10 @@ input {
   display: -ms-grid;
   display: grid;
   height: 100%;
-  -ms-grid-rows: (120px)[8];
-      grid-template-rows: repeat(8, 120px);
-  -ms-grid-columns: (auto)[5];
-      grid-template-columns: repeat(5, auto);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
 }
 
@@ -1141,13 +1140,9 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
   font-size: 1.5em;
   background-size: cover;
-  background-position: top left;
-  -webkit-transition: all ease-in-out 300ms;
-  transition: all ease-in-out 300ms;
-  position: relative;
-  z-index: 10;
 }
 
 .portfolio-item.small {
@@ -1182,25 +1177,6 @@ input {
 
 .two {
   background-image: url(//unsplash.it/800/600);
-}
-
-.two::before {
-  content: '';
-  display: block;
-  background: #353535;
-  opacity: 0.8;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition: all ease-in-out 300ms;
-  transition: all ease-in-out 300ms;
-  z-index: -1;
-}
-
-.two:hover::before {
-  opacity: 0.2;
 }
 
 * {

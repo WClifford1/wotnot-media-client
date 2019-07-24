@@ -1,5 +1,7 @@
 import React from 'react'
-import tak from '../images/grid6.png'
+import one from '../images/proj6.png'
+import two from '../images/proj7.png'
+import three from '../images/proj10.png'
 import tak2 from '../images/grid14.png'
 import tak3 from '../images/grid16.png'
 import tak4 from '../images/grid18.png'
@@ -18,12 +20,12 @@ export default function Projects() {
             <div className="cont-cont">
             <div className="main-cont">
                 <div className="portfolio">
-                    <div class="portfolio-item medium">one</div>
+                    <div class="portfolio-item medium"><img src={one} alt="Newspaper flyer"/></div>
                     <div class="portfolio-item large two">two</div>
-                    <div class="portfolio-item medium">three</div>
+                    <div class="portfolio-item medium"><img src={one} alt="Newspaper flyer"/></div>
                     <div class="portfolio-item small">four</div>
-                    <div class="portfolio-item tall">five</div>
-                    <div class="portfolio-item wide">six</div>
+                    <div class="portfolio-item tall">nah</div>
+                    <div class="portfolio-item wide"><img src={two} alt="Newspaper flyer"/></div>
                     {/* <div class="portfolio-item wide">six</div>
                     <div class="portfolio-item medium">one</div> */}
                 </div>
