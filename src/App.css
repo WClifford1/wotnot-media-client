@@ -310,6 +310,11 @@
   width: 40%;
 }
 
+.contact-cont .contact-form .contact-message {
+  margin-top: 40px;
+  outline: none;
+}
+
 .contact-cont .contact-form h1 {
   padding-bottom: 20px;
   font-size: 46px;

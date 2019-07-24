@@ -49,7 +49,11 @@ $off-black: #322645;
         text-align: left;
         display: block;
         width: 40%;
-
+    
+        .contact-message {
+            margin-top: 40px;
+            outline: none;
+        }
 
         h1   {
             // padding: 5px;
