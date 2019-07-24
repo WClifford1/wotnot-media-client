@@ -14,54 +14,36 @@ import Privacy from './components/Privacy';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import './/App.css';
-import jwtDecode from 'jwt-decode'
 import Print from './components/Print';
 import WebDesign from './components/WebDesign';
 import Video from './components/Video';
-import TestContact from './components/TestContact';
-
 
 
 export default class App extends Component {
 
 
   render() {
-  return (
-    <React.Fragment>
-      <Navbar1 />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/services" component={ServicePage} />
-        <Route path="/projects" component={Card1} />
-        <Route path="/FAQ" component={Faq} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/enquiries" component={EnquiryForm} />
-        <Route path="/bookings" component={BookingForm} />
-        <Route path="/termsandconditions" component={Terms} />
-        <Route path="/privacy" component={Privacy} />
-        <Route path="/login" component={Login} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/print" component={Print} />
-        <Route path="/web" component={WebDesign} />
-        <Route path="/video" component={Video} />
-      </Switch>
-      <Footer />
-
-      
-      {/* <EnquiryForm /> */}
-      {/* {!this.state.user && 
-      <Login user={this.state.user} />
-      }
-      {this.state.user &&
-      <LogOut/>}
-
-      </div> */}
-
-      {/* <Guarantee /> */}
-      {/* <Card1 /> */}
-      {/* <Services /> */}
-
-    </React.Fragment>
-  );
-}
+    return (
+      <React.Fragment>
+        <Navbar1 />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/services" component={ServicePage} />
+          <Route path="/projects" component={Card1} />
+          <Route path="/FAQ" component={Faq} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/enquiries" component={EnquiryForm} />
+          <Route path="/bookings" component={BookingForm} />
+          <Route path="/termsandconditions" component={Terms} />
+          <Route path="/privacy" component={Privacy} />
+          <Route path="/login" component={Login} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/print" component={Print} />
+          <Route path="/web" component={WebDesign} />
+          <Route path="/video" component={Video} />
+        </Switch>
+        <Footer />
+      </React.Fragment>
+    );
+  }
 }

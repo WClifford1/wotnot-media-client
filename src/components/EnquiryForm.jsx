@@ -64,12 +64,13 @@ export default class EnquiryForm extends Component {
 
     onSubmit(e) {
         e.preventDefault()
+        // Check for errors and do not post if there are any
         const errors = this.validate()
         console.log(errors)
         this.setState( { errors })
         if (errors) return
 
-
+        // Create newEnquiry variable from what is in the state.
         const newEnquiry = {
             name: this.state.name,
             email: this.state.email,
@@ -77,19 +78,21 @@ export default class EnquiryForm extends Component {
             enquiry: this.state.enquiry
         }
 
-
+        // Post the newEnquiry object to the database
         // https://wotnotmedia.herokuapp.com/api/enquiries
         axios.post('http://localhost:4000/api/enquiries', newEnquiry)
             .then(res => console.log(res.data)
             )
 
-
+        // Reset the state
         this.setState({
             name: '',
             email: '',
             phoneNumber: '',
             enquiry: ''
         })
+
+        // Take the user back to the homepage
         this.props.history.push('/')
     }
 
