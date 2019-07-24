@@ -1,0 +1,19 @@
+.staff-cont {
+    border: 2px solid red;
+
+
+    .staff-title {
+        color: $dark-blue;
+        padding: 30px 150px;
+        display: flex;
+        // justify-content: center;
+        background-color: #ECF6FB;
+
+        h1 {
+            font-weight: 100;
+            font-size: 36px;
+        }
+    }
+
+    
+}

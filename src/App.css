@@ -1179,6 +1179,24 @@ input {
   background-image: url(//unsplash.it/800/600);
 }
 
+.staff-cont {
+  border: 2px solid red;
+}
+
+.staff-cont .staff-title {
+  color: #211c4f;
+  padding: 30px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ECF6FB;
+}
+
+.staff-cont .staff-title h1 {
+  font-weight: 100;
+  font-size: 36px;
+}
+
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
