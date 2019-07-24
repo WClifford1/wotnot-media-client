@@ -130,8 +130,8 @@ export default class EnquiryForm extends Component {
 
                         <div className="form-input">
                             <input type="text" className="form-control" placeholder="Insert your phone number here"
-                            value={this.state.phone}
-                            onChange={this.onChangePhone} />
+                            value={this.state.phoneNumber}
+                            onChange={this.onChangePhoneNumber} />
                         </div>
 
                         <div className="form-text">

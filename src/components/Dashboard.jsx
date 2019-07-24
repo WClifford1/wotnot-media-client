@@ -18,9 +18,10 @@ export default class Dashboard extends Component {
     }
 
     handleDelete = async enquiryId => {
+        if (window.confirm('Are you sure you wish to delete this item?')) {
         await axios.delete('http://localhost:4000/api/enquiries/' + enquiryId)
         window.location.reload()
-    }
+    }}
 
     handleRead = async (enquiryId, read) => {
         const id = { isRead: read }
