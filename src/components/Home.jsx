@@ -11,7 +11,7 @@ import Showcase from './Showcase';
 
 export default function Home() {
     return (
-        <Router>
+        <React.Fragment>
             <div className="nav-cont">
                 {/* <div className="nav">
                 <h2 className="logo">WotNot Media</h2>
@@ -59,6 +59,6 @@ export default function Home() {
                 <WhyUs />
                 <Showcase />
             </div>
-        </Router>
+        </React.Fragment>
     )
 }
