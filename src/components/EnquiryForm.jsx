@@ -53,7 +53,7 @@ export default class EnquiryForm extends Component {
 
 
     onChangePhoneNumber(e) {
-        if (!isNaN(e.target.value)){
+        if (!isNaN(e.target.value) || e.target.value === '+'){
             this.setState({
                 phoneNumber: e.target.value
             })
