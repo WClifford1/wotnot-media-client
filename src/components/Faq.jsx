@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
 
 export default class Faq extends Component {
-       constructor(props) {
-           super(props)
-       
-        
-            this.onClick = this.onClick.bind(this);
-        
-       }
-       
+    
+    constructor(props) {
+        super(props)
+        this.onClick = this.onClick.bind(this);
+    }
+
 
     onClick (button) {
             button.addEventListener('click', () => {

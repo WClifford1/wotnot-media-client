@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Home from './components/Home';
-import Guarantee from './components/Guarantee';
 import Card1 from './components/Card1'; 
 import EnquiryForm from './components/EnquiryForm';
 import BookingForm from './components/BookingForm';
@@ -12,32 +11,18 @@ import Contact from './components/Contact';
 import ServicePage from './components/ServicePage';
 import Terms from './components/Terms';
 import Privacy from './components/Privacy';
-import jwtDecode from 'jwt-decode'
-import './/App.css'
+import Login from './components/Login';
+import Dashboard from './components/Dashboard';
+import './App.css'
 
 
 export default class App extends Component {
 
 
-  state = {}
-
-
-  componentDidMount() {
-      try {
-      const jwt = localStorage.getItem("token")
-      const user = jwtDecode(jwt)
-      this.setState( { user })
-      } catch(err) {}
-  }
-
-
   render() {
   return (
     <React.Fragment>
-      {/* <div> */}
-      {/* <Home /> */}
       <Navbar1 />
-      {/* <Home /> */}
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/services" component={ServicePage} />
@@ -48,21 +33,10 @@ export default class App extends Component {
         <Route path="/bookings" component={BookingForm} />
         <Route path="/termsandconditions" component={Terms} />
         <Route path="/privacy" component={Privacy} />
+        <Route path="/login" component={Login} />
+        <Route path="/dashboard" component={Dashboard} />
       </Switch>
       <Footer />
-      {/* <EnquiryForm /> */}
-      {/* {!this.state.user && 
-      <Login user={this.state.user} />
-      }
-      {this.state.user &&
-      <LogOut/>}
-
-      </div> */}
-
-      {/* <Guarantee /> */}
-      {/* <Card1 /> */}
-      {/* <Services /> */}
-
     </React.Fragment>
   );
 }
