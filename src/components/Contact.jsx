@@ -9,7 +9,8 @@ export default class Contact extends Component {
 
         this.onChangeName = this.onChangeName.bind(this)
         this.onChangeEmail = this.onChangeEmail.bind(this)
-        this.onChangePhone = this.onChangePhone.bind(this)
+        this.onChangePhoneNumber = this.onChangePhoneNumber.bind(this)
+        this.onChangeEnquiry = this.onChangeEnquiry.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
         // this.onCancel = this.onCancel.bind(this)
 
@@ -17,7 +18,8 @@ export default class Contact extends Component {
         this.state = {
             name: '',
             email: '',
-            phone: ''
+            phoneNumber: '',
+            enquiry: ''
         }
     }
 
@@ -33,33 +35,36 @@ export default class Contact extends Component {
         })
     }
 
-    onChangePhone(e) {
+    onChangePhoneNumber(e) {
         this.setState({
-            phone: e.target.value
+            phoneNumber: e.target.value
+        })
+    }
+
+    onChangeEnquiry(e) {
+        this.setState({
+            enquiry: e.target.value
         })
     }
 
     onSubmit(e) {
         e.preventDefault()
 
-        console.log(`Booking submitted: `)
-        console.log(`Name: ${this.state.name}`)
-        console.log(`Email: ${this.state.email}`)
-        console.log(`Phone: ${this.state.phone}`)
-        console.log(`Time: ${this.state.time}`)
 
-        const newBooking = {
+        const newEnquiry = {
             name: this.state.name,
             email: this.state.email,
-            phone: this.state.phone
+            phoneNumber: this.state.phone,
+            enquiry: this.state.enquiry
         }
-        axios.post('http://localhost:4000/api/bookings', newBooking)
+        axios.post('http://localhost:4000/api/enquiries', newEnquiry)
             .then(res => console.log(res.data))
 
         this.setState({
             name: '',
             email: '',
-            phone: ''
+            phoneNumber: '',
+            enquiry: ''
         })
     }
 
@@ -70,7 +75,6 @@ export default class Contact extends Component {
                     <h1>Contact Us</h1>
                     <h2>We'd love to hear from you!</h2>
                 </div> */}
-              
 
                 <div className="contact-page">
                 <div className="contact-form">
@@ -83,16 +87,17 @@ export default class Contact extends Component {
                         <div className="contact-text">
                             <label><strong>Name :</strong></label>
                         </div>
+
                         <div className="contact-input">
                             <input type="text" className="contact-control"
                                 value={this.state.name}
                                 onChange={this.onChangeName} placeholder="Enter phone name here" />
                         </div>
 
-
                         <div className="contact-text">
                             <label><strong>Email :</strong></label>
                         </div>
+
                         <div className="contact-input">
                             <input type="text" className="contact-control"
                                 value={this.state.email}
@@ -102,15 +107,26 @@ export default class Contact extends Component {
                         <div className="contact-text">
                             <label><strong>Phone :</strong></label>
                         </div>
+
                         <div className="contact-input">
                             <input type="text" className="contact-control"
-                                value={this.state.phone}
-                                onChange={this.onChangePhone} placeholder="Enter phone number here" />
+                                value={this.state.phoneNumber}
+                                onChange={this.onChangePhoneNumber} placeholder="Enter phone number here" />
+                        </div>
+
+                        <div className="contact-text">
+                            <label><strong>Message :</strong></label>
+                        </div>
+
+                        <div className="contact-message">
+                            <input type="text" className="contact-control"
+                                value={this.state.enquiry}
+                                onChange={this.onChangeEnquiry} placeholder="Enter enquiry here" />
                         </div>
 
                         <div className="contact-btn">
                             <input type="submit"
-                                value="Confirm Booking"
+                                value="Send Message"
                                 className="contact-sub" />
                         </div>
                     </form>
