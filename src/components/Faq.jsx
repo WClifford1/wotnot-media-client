@@ -1,16 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Accordion from './Accordion';
 
 export default class Faq extends Component {
     
-    constructor(props) {
-        super(props)
-        this.onClick = this.onClick.bind(this);
-    }
 
-
-
-export default function Faq() {
+    render(){
     return (
         <div>
             <Accordion title="What is your name?" 
@@ -30,4 +24,5 @@ export default function Faq() {
             />
         </div>
     )
+}
 }

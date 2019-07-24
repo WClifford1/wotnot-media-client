@@ -13,7 +13,7 @@ import Terms from './components/Terms';
 import Privacy from './components/Privacy';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
-import './App.css'
+import './/App.css';
 import jwtDecode from 'jwt-decode'
 import Print from './components/Print';
 import WebDesign from './components/WebDesign';
