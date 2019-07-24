@@ -4,11 +4,11 @@ import ShowEnquiry from './ShowEnquiry';
 
 export default class Dashboard extends Component {
 
-
     state = {
         enquiries: []
     }
 
+    
     componentDidMount() {
         axios.defaults.headers.common['x-auth-token'] = localStorage.getItem('token')
         axios.get('http://localhost:4000/api/enquiries')
@@ -20,7 +20,7 @@ export default class Dashboard extends Component {
     handleDelete = async enquiryId => {
         if (window.confirm('Are you sure you wish to delete this item?')) {
         await axios.delete('http://localhost:4000/api/enquiries/' + enquiryId)
-        window.location.reload()
+        this.setState({ enquiries: this.state.enquiries.filter(x => x._id !== enquiryId) })
     }}
 
     handleRead = async (enquiryId, read) => {
