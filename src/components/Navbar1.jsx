@@ -12,7 +12,7 @@ export default function Navbar1() {
                 
                 <h2 className="logo"><Link to="/"><img src={logo} className="logo-inner" alt="hoohaa" /></Link></h2>
                 <ul className="nav-items">
-                    <li><a className="hov" href="sad"><Link to="/services">
+                    <li><a className="hov" href="sad"><Link to="/projects">
                     Projects
                     </Link></a></li>
                     <li><a className="hov" href="sad"><Link to="/services">Services</Link></a></li>
