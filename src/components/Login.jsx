@@ -67,16 +67,16 @@ export default class Login extends Component {
                             <label>Name</label>
                         </div>
                         <div className="staff-input">
-                            <input name="name" onChange={this.onChange} autoFocus value={this.state.account.name} type="text" />
+                            <input name="name" onChange={this.onChange} autoFocus value={this.state.account.name} type="text" placeholder="Insert name here" />
                         </div>
                         <div className="staff-text">
                             <label>Password</label>
                         </div>
                         <div className="staff-input">
-                            <input value={this.state.account.password} onChange={this.onChange} name="password" type="password" />
+                            <input value={this.state.account.password} onChange={this.onChange} name="password" type="password" placeholder="Insert password here" />
                         </div>
                         <div className="staff-btn">
-                            <input type="submit" value="Submit" />
+                            <input type="submit" value="Submit" className="staff-sub" />
                         </div>
                     </form>
                 </div>

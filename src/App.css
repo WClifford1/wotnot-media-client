@@ -1185,6 +1185,7 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 25%;
   background-color: #ECF6FB;
 }
 
@@ -1194,7 +1195,7 @@ input {
 }
 
 .staff-cont .staff-form {
-  border: 2px solid green;
+  padding-top: 20px;
 }
 
 .staff-cont .staff-form .staff-text {
@@ -1222,9 +1223,35 @@ input {
 .staff-cont .staff-form .staff-input input {
   outline: none;
   border-bottom: 1px solid grey;
-  width: 80%;
+  width: 50%;
   font-size: 24px;
   font-weight: 100;
+  text-align: center;
+}
+
+.staff-cont .staff-form .staff-btn {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.staff-cont .staff-form .staff-btn .staff-sub {
+  border: 1px solid #211c4f;
+  padding: 20px;
+  border-radius: 40px;
+  font-size: 15px;
+  background-color: #211c4f;
+  color: white;
+  width: 150px;
+}
+
+.staff-cont .staff-form .staff-btn .staff-sub:hover {
+  background-color: #fff;
+  color: #211c4f;
 }
 
 * {
