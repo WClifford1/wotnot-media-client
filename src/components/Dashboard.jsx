@@ -8,7 +8,6 @@ export default class Dashboard extends Component {
         enquiries: []
     }
 
-    
     componentDidMount() {
         axios.defaults.headers.common['x-auth-token'] = localStorage.getItem('token')
         axios.get('http://localhost:4000/api/enquiries')
@@ -29,22 +28,21 @@ export default class Dashboard extends Component {
         window.location.reload()
     }
 
-
     render() {
         return (
             <div>
                 {this.state.enquiries.map(enquiry => 
-                <ShowEnquiry
-                key={enquiry._id}
-                isRead={enquiry.isRead}
-                id={enquiry._id}
-                name={enquiry.name}
-                email={enquiry.email}
-                phoneNumber={enquiry.phoneNumber}
-                enquiry={enquiry.enquiry}
-                handleDelete={this.handleDelete}
-                handleRead={this.handleRead}
-                />)}
+                    <ShowEnquiry
+                        key={enquiry._id}
+                        isRead={enquiry.isRead}
+                        id={enquiry._id}
+                        name={enquiry.name}
+                        email={enquiry.email}
+                        phoneNumber={enquiry.phoneNumber}
+                        enquiry={enquiry.enquiry}
+                        handleDelete={this.handleDelete}
+                        handleRead={this.handleRead}
+                    />)}
             </div>
         )
     }

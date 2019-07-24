@@ -31,7 +31,7 @@ export default class EnquiryForm extends Component {
         return Object.keys(errors).length === 0 ? null : errors
     }
 
-    
+
     onChangeName(e) {
         this.setState({
             name: e.target.value
