@@ -19,7 +19,8 @@ export default function Accordion(props) {
     }
 
     return (
-        <React.Fragment>    
+        <React.Fragment>  
+
         <div className="accordion__section">
             <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
                 <p className="accordion__title">{props.title}</p>

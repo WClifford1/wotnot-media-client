@@ -433,12 +433,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px;
+  padding: 0px;
 }
 
 .accordion {
-  background-color: #7d7ebe;
-  color: #444;
+  background-color: #fff;
+  color: #2b2bb3;
   cursor: pointer;
   padding: 18px;
   display: -webkit-box;
@@ -458,7 +458,7 @@
 
 .accordion:hover,
 .active {
-  background-color: #f0ac39;
+  background-color: #f7f5f5;
 }
 
 .accordion__title {
@@ -492,6 +492,27 @@
   padding: 18px;
   width: 80%;
   margin: 0 auto;
+  text-align: center;
+}
+
+.faq-header {
+  color: #d98d91;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.faq-header h1 {
+  font-weight: 100;
+  font-size: 36px;
+}
+
+.faq-cont {
+  padding-bottom: 40px;
 }
 
 .servy-cont {
