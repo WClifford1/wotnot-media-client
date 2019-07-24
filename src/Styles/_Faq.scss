@@ -11,12 +11,12 @@ $off-black: #322645;
 .accordion__section {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 0px;
 }
 
 .accordion {
-    background-color: $material-purple;
-    color: #444;
+    background-color: #fff;
+    color: rgb(43, 43, 179);
     cursor: pointer;
     padding: 18px;
     display: flex;
@@ -33,7 +33,7 @@ $off-black: #322645;
 // And a background color tot eh button if it is clicked on {add the active class}
 .accordion:hover,
 .active {
-    background-color: $material-yellow;
+    background-color: rgb(247, 245, 245);
 }
 //  Style accordion content title
 .accordion__title {
@@ -64,8 +64,23 @@ $off-black: #322645;
     padding: 18px;
     width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
+// FAQ header
+.faq-header {
+    color: $material-pink;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    
+    h1 {
+        font-weight: 100;
+        font-size: 36px;    
+    }
+}
 
-
+.faq-cont {
+    padding-bottom: 40px;
+}
 
