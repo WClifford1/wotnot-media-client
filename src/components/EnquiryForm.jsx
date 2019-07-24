@@ -27,9 +27,12 @@ export default class EnquiryForm extends Component {
     validate = () => {
         const errors = {}
         if (this.state.name.trim().length < 1 || this.state.name.trim().length > 20){
-        errors.name = "Name must be between 1 and 20 characters"
+        errors.name = "*Your name must be between 1 and 20 characters"
         if (this.state.email.trim().length < 1 || this.state.name.trim().length > 50){
-            errors.email = "Email must be between 1 and 50 characters"
+            errors.email = "*Your email address must be between 1 and 50 characters"
+        }
+        if (this.state.enquiry.trim().length < 1 || this.state.name.trim().length > 500){
+            errors.enquiry = "*Your enquiry must be between 1 and 500 characters"
         }
         return Object.keys(errors).length === 0 ? null : errors }
     }
@@ -118,7 +121,7 @@ export default class EnquiryForm extends Component {
                             <input type="text" className="form-control" placeholder="Insert your name here"
                             value={this.state.name}
                             onChange={this.onChangeName} />
-                            {this.state.errors.name && <h1>{this.state.errors.name}</h1>}
+                            {this.state.errors.name && <p style={{ color: "red" }}>{this.state.errors.name}</p>}
                         </div>
 
                         <div className="form-text">
@@ -129,8 +132,8 @@ export default class EnquiryForm extends Component {
                             <input type="email" className="form-control" placeholder="Insert your email here"
                             value={this.state.email}
                             onChange={this.onChangeEmail} />
+                            {this.state.errors.email && <p style={{ color: "red" }}>{this.state.errors.email}</p>}
                         </div>
-                        {this.state.errors.email && <h1>{this.state.errors.email}</h1>}
 
                         <div className="form-text">
                             <label><strong>Phone : </strong></label>
@@ -150,6 +153,7 @@ export default class EnquiryForm extends Component {
                             <textarea type="text" className="form-control" placeholder="Insert your query here"
                             value={this.state.enquiry}
                             onChange={this.onChangeEnquiry} />
+                            {this.state.errors.enquiry && <p style={{ color: "red" }}>{this.state.errors.enquiry}</p>}
                         </div>
 
                         <div className="form-btn">
