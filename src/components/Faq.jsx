@@ -11,6 +11,7 @@ export default class Faq extends Component {
             <div className="faq-header">
                 <h1>Frequently Asked Questions</h1>
             </div>
+            <div className="faq-inner">
             <Accordion title="What is your hourly rate?" 
             content="lorem orem orem orem orem orem orem orem orem" 
             />
@@ -32,6 +33,7 @@ export default class Faq extends Component {
             <Accordion title="Why should I choose you?" 
             content="lorem orem orem orem orem orem orem orem orem lorem orem orem orem orem orem orem orem orem" 
             />
+        </div>
         </div>
     )
 }

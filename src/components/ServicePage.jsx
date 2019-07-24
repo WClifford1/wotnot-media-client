@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 export default function TestCard() {
     return (
         <div className="servy-cont">
-        {/* <div className="servy-title">
+        <div className="servy-title">
             <h1>Services Page</h1>
-        </div> */}
+        </div>
         <div className="cards-cont">
         <section class="cards">
         <article class="card card--1">

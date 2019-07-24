@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link, Redirect } from 'react-router-dom'
 import jwtDecode from 'jwt-decode'
+import logo from '../images/logo1.png'
 
 
 export default class Footer extends Component {
@@ -28,7 +29,7 @@ export default class Footer extends Component {
         <div>
             <div className="footer-cont">
                 <div className="footer-logo">
-                <h2>Wotnot-Media</h2>
+                <h2 className="logo"><Link to="/"><img src={logo} className="logo-inner" alt="hoohaa" /></Link></h2>
                 </div>
                 <div className="footer-res1">
                     <div className="footer-title1">
