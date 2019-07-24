@@ -1179,10 +1179,6 @@ input {
   background-image: url(//unsplash.it/800/600);
 }
 
-.staff-cont {
-  border: 2px solid red;
-}
-
 .staff-cont .staff-title {
   color: #211c4f;
   padding: 30px 150px;
@@ -1195,6 +1191,40 @@ input {
 .staff-cont .staff-title h1 {
   font-weight: 100;
   font-size: 36px;
+}
+
+.staff-cont .staff-form {
+  border: 2px solid green;
+}
+
+.staff-cont .staff-form .staff-text {
+  padding: 20px;
+  font-size: 16px;
+  color: #6d6d6d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.staff-cont .staff-form .staff-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #6d6d6d;
+}
+
+.staff-cont .staff-form .staff-input input {
+  outline: none;
+  border-bottom: 1px solid grey;
+  width: 80%;
+  font-size: 24px;
+  font-weight: 100;
 }
 
 * {

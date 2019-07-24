@@ -1,5 +1,15 @@
+$off-white: #fcf7f8;
+$dark-blue: #211c4f;
+$material-grey: #bab0ba;
+$material-pink: #d98d91;
+$material-purple: #7d7ebe;
+$material-red: #eb561a;
+$material-yellow: #f0ac39;
+$off-black: #322645;
+$material-blue: #ECF6FB;
+
 .staff-cont {
-    border: 2px solid red;
+    // border: 2px solid red;
 
 
     .staff-title {
@@ -15,5 +25,32 @@
         }
     }
 
-    
+    .staff-form {
+        border: 2px solid green;
+
+        .staff-text {
+            padding: 20px;
+            font-size: 16px;
+            color: rgb(109, 109, 109);
+            display: flex;
+            justify-content: center;
+            
+        }
+        .staff-input {
+            display: flex;
+            justify-content: center;
+            // padding: 10px;
+            color: rgb(109, 109, 109);
+
+            input {
+                outline: none;
+                border-bottom: 1px solid grey;
+                width: 80%;
+                font-size: 24px;
+                font-weight: 100;
+            }
+
+            
+        }
+    }
 }

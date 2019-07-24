@@ -71,7 +71,11 @@ export default class Login extends Component {
                         </div>
                         <div className="staff-text">
                             <label>Password</label>
+                        </div>
+                        <div className="staff-input">
                             <input value={this.state.account.password} onChange={this.onChange} name="password" type="password" />
+                        </div>
+                        <div className="staff-btn">
                             <input type="submit" value="Submit" />
                         </div>
                     </form>
