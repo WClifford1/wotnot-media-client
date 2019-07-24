@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Terms() {
     return (
-        <div>
-            <h1>Terms and Conditions ("Terms")</h1>
+        <div className="term-cont">
+            <h1>Terms and Conditions</h1>
 
 
 <p>Last updated: July 21, 2019</p>

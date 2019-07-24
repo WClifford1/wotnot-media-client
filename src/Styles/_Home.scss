@@ -26,12 +26,15 @@ $off-black: #322645;
     }
 
     .logo {
-        color: $material-purple ;
         text-align: center;
         padding-top: 11px;
         width: 50%;
         padding-right: 100px;    
         z-index: 2;
+        a {
+        color: $material-purple ;
+        text-decoration: none;
+        }
     }
 
     .nav-items {

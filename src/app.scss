@@ -5,6 +5,13 @@
 @import './Styles/Faq';
 @import './Styles/Service';
 @import './Styles/ShowEnquiry';
+@import './Styles/Print';
+@import './Styles/WebDesign';
+@import './Styles/Video';
+@import './Styles/Terms';
+@import './Styles/PrivCont';
+@import './Styles/Showcase';
+@import './Styles/TestContact';
 
 $off-white: #fcf7f8;
 $dark-blue: #211c4f;
@@ -73,16 +80,51 @@ html {
 
     .hero-image {
         display: flex;
+    //     // border: 2px solid red;
+
+    //     .blob {
+    //         // border: 2px solid green;
+    //         height: 100%;
+            
+    //     }
+
+    // ----------------------------------------
+
+    .image-home {
         // border: 2px solid red;
+        position: relative;
+            
 
         .blob {
+            position: relative;
+            top: 0;
+            right: 0px;
+
+            img {
             // border: 2px solid green;
-            height: 100%;
-            // border: 2px solid red;
-            // padding-bottom: 20px;
+            height: 500px;
+            }
+
+        
+           
         }
+        
+        .comp-img {
+            position: absolute;
+            top: -20px;
+            right: 90px;
+
+            img {
+            padding-top: 100px;
+            height: 350px;
+            }
+        }
+     
     }
 
+    }
+
+  
     .hero-text {
 
         display: flex;
@@ -90,15 +132,16 @@ html {
         justify-content: center;
         align-items: center;
         padding-bottom: 80px;
+        padding-top: 80px;
         z-index: 2;
 
         h1 {
             display: flex;
             // border:2px solid blue;
-            width: 95%;
+            width: 75%;
             justify-content: center;
             align-content: center;
-            padding: $title-pad;
+            padding: 30px;
             color: $material-purple;
             font-weight: 100;
         }
@@ -106,7 +149,7 @@ html {
         p {
             display: flex;
             // border: 2px solid green;
-            width: 95%;
+            width: 60%;
             justify-content: center;
             align-content: center;
             text-align: center;
@@ -114,7 +157,7 @@ html {
         }
 
         .hbtn-cont {
-            padding: $title-pad;
+            padding: 30px;
 
             .hero-btn {
                 border-radius: 40px;
@@ -238,10 +281,32 @@ html {
     background-color: #fff;
     padding-bottom: 30px;
 
+    .pic-cont {
+        position: relative;
+
     .help-blob {
         position: relative;
-        left: -200px;
+        left: -10px;
+        bottom: 15px;
+
+        img {
+            height: 500px;
+        }
     }
+
+        .light-img {
+            position: absolute;
+            top: 30px;
+            left: 40px;
+
+            img {
+                height: 400px;
+            }
+
+        }
+    
+
+}
 
     .help-text {
         // border:2px solid red;
@@ -317,17 +382,18 @@ html {
     padding: 60px;
     flex-direction: column;
     text-align: center;
-    
+
     .outer-text {
         // border: 2px solid red;
-        
+
         padding-bottom: 40px;
 
         p {
-        color: $material-yellow;
-        line-height: 1.5em;
+            color: $material-yellow;
+            line-height: 1.5em;
 
         }
+
         h1 {
             color: $material-purple;
             // font-size: 30px;
@@ -396,11 +462,11 @@ html {
         padding-top: 20px;
         color: $material-purple;
         padding-left: 20px;
-        width: 40%; 
+        width: 40%;
 
 
         h2 {
-        font-weight: 200;
+            font-weight: 200;
         }
     }
 }
@@ -426,13 +492,19 @@ html {
         // text-align: center;
 
         li {
-            color: $material-grey;
-            padding: 5px;
+            padding: 5px 0;
             cursor: pointer;
 
-            &:hover {
-                color: $material-yellow;
+            a {
+                color: $material-grey;
+                text-decoration: none;
+
+
+                &:hover {
+                    color: $material-yellow;
+                }
             }
+
         }
     }
 }
@@ -457,13 +529,18 @@ html {
         // text-align: center;
 
         li {
-            color: $material-grey;
             padding: 5px;
             cursor: pointer;
 
-            &:hover {
-                color: $material-yellow;
+            a {
+                color: $material-grey;
+                text-decoration: none;
+
+                &:hover {
+                    color: $material-yellow;
+                }
             }
+
         }
     }
 }
@@ -487,16 +564,21 @@ html {
         justify-content: flex-end;
         flex-direction: column;
         // text-align: center;
-        
+
 
         li {
             padding: 5px;
-            color: $material-grey;
             cursor: pointer;
 
-            &:hover {
-                color: $material-yellow;
+            a {
+                color: $material-grey;
+                text-decoration: none;
+
+                &:hover {
+                    color: $material-yellow;
+                }
             }
+
         }
 
     }

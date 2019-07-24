@@ -35,9 +35,9 @@ export default class Footer extends Component {
                         <h3>Services</h3>
                     </div>
                     <div className="footer-links1">
-                        <li>Video Content</li>
-                        <li>Web Design</li>
-                        <li>Photography</li>
+                        <li><Link to="/video">Video Content</Link></li>
+                        <li><Link to="/web">Web Design</Link></li>
+                        <li><Link to="/print">Printing</Link></li>
                     </div>
                 </div>
 

@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Accordion from './Accordion';
 
 export default class Faq extends Component {
     
@@ -8,25 +9,25 @@ export default class Faq extends Component {
     }
 
 
-    onClick (button) {
-            button.addEventListener('click', () => {
-                button.classList.toggle('accordion__button--active')     
-            })
-        }
 
-    render() {
+export default function Faq() {
     return (
-        <div className="question-cont">
-            <h1>Frequently Asked Questions</h1>
-            <div className="accordion">
-                <button type="button" className="accordion__button" onClick={this.onClick}>Expand Content</button>
-                <div className="accordion__content">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque, tempora totam obcaecati odit expedita vero sunt nobis placeat? Natus?
-                    </p>
-                </div>
-            </div>
+        <div>
+            <Accordion title="What is your name?" 
+            content="lorem orem orem orem orem orem orem orem orem" 
+            />
+            <Accordion title="What is your name?" 
+            content="lorem orem orem orem orem orem orem orem orem lorem orem orem orem orem orem orem orem orem" 
+            />
+            <Accordion title="What is your name?" 
+            content="
+            <p>lorem orem orem orem orem orem orem orem orem</p>
+            </br>
+            <p>lorem orem orem orem orem orem orem orem orem</p>
+            </br>
+            <p>lorem orem orem orem orem orem orem orem orem</p>
+            " 
+            />
         </div>
     )
-    } 
 }

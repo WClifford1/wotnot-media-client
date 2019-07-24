@@ -7,43 +7,65 @@ $material-red: #eb561a;
 $material-yellow: #f0ac39;
 $off-black: #322645;
 
-
-.question-cont {
-    border: 2px solid red;
-
-    .accordion__button {
-        display: block;
-        width: 100%;
-        padding: 15px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        background: #333333;
-        color: #fff;
-        text-align: left;
-        transition: background 0.2s;
-    }
-
-    .accordion__button::after {
-        content: '\25be';
-        float: right;
-        transform: scale(1.5);
-    }
-
-    .accordion__button--active {
-        background: #555555;
-    }
-
-    .accordion__button--active::after {
-        content: '\25b4';
-    }
-
-    .accordion__content {
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.2s;
-
-        padding: 0 15px;
-        background: #eee;   
-    }
+// The accordion section 
+.accordion__section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
+
+.accordion {
+    background-color: $material-purple;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+
+}
+
+// And a background color tot eh button if it is clicked on {add the active class}
+.accordion:hover,
+.active {
+    background-color: $material-yellow;
+}
+//  Style accordion content title
+.accordion__title {
+    font-weight: 600;
+    font-size: 14px;
+}
+//  Style accordion icon
+.accordion__icon {
+    margin-left: auto;
+    transition: transform 0.6s ease;
+}
+
+// Rotate icon when state is active
+.rotate {
+    transform: rotate(90deg);
+}
+// The accordion content panel: Hidden by default
+.accordion__content {
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    // max-height: auto;
+}
+// The accordion context text 
+.accordion__text {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 18px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
