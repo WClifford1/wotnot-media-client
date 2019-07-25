@@ -17,7 +17,7 @@ export default class Dashboard extends Component {
     // Set the enquries as the state
     componentDidMount() {
         axios.defaults.headers.common['x-auth-token'] = localStorage.getItem('token')
-        axios.get('http://localhost:4000/api/enquiries')
+        axios.get('https://wotnotmedia.herokuapp.com/api/enquiries')
         .then(res => {
             this.setState({ enquiries: res.data})
         })
