@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom'
 import axios from 'axios'
 
 
@@ -44,7 +45,7 @@ export default class Login extends Component {
             .then(res =>
                 localStorage.setItem('token', res.data))
             .then(res =>
-                window.location.replace('/dashboard'))
+                <Redirect to='/dashboard'  />)
         this.setState({
             account: {
                 name: '',
