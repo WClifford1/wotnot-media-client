@@ -42,17 +42,27 @@ export default class Footer extends Component {
                     </div>
                 </div>
 
+                <div className="footer-res1">
+                    <div className="footer-title1">
+                        <h3>Information</h3>
+                    </div>
+                    <div className="footer-links1">
+                    <li><Link to="/contact">Contact Information</Link></li>
+                        <li><Link to="/Faq">FAQ</Link></li>
+                    </div>
+                </div>
+
+                
+
                 <div className="footer-res2">
 
                     <div className="footer-title2">
-                        <h3>Information</h3>
+                        <h3>Contract</h3>
                     </div>
 
                     <div className="footer-links2">
-                        <li><Link to="/Faq">FAQ</Link></li>
                         <li><Link to="termsandconditions">Terms & Conditions</Link></li>
                         <li><Link to="/privacy">Privacy Policy</Link></li>
-                        <li><Link to="/contact">Contact Information</Link></li>
                             {!this.state.user &&
                             <li><Link to="/login">Staff Portal</Link></li>}
                             {this.state.user &&

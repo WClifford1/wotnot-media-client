@@ -17,6 +17,7 @@ import './/App.css';
 import Print from './components/Print';
 import WebDesign from './components/WebDesign';
 import Video from './components/Video';
+import Projects from './components/Projects';
 
 
 export default class App extends Component {
@@ -29,7 +30,7 @@ export default class App extends Component {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/services" component={ServicePage} />
-          <Route path="/projects" component={Card1} />
+          <Route path="/projects" component={Projects} />
           <Route path="/FAQ" component={Faq} />
           <Route path="/contact" component={Contact} />
           <Route path="/enquiries" component={EnquiryForm} />
@@ -41,6 +42,7 @@ export default class App extends Component {
           <Route path="/print" component={Print} />
           <Route path="/web" component={WebDesign} />
           <Route path="/video" component={Video} />
+          
         </Switch>
         <Footer />
       </React.Fragment>
