@@ -29,7 +29,7 @@ export default class Dashboard extends Component {
     // Reset the state without the deleted item
     handleDelete = async enquiryId => {
         if (window.confirm('Are you sure you wish to delete this item?')) {
-        await axios.delete('http://localhost:4000/api/enquiries/' + enquiryId)
+        await axios.delete('https://wotnotmedia.herokuapp.com/api/enquiries/' + enquiryId)
         this.setState({ enquiries: this.state.enquiries.filter(x => x._id !== enquiryId) })
     }}
 
@@ -39,9 +39,15 @@ export default class Dashboard extends Component {
     // When isRead is true the grid-box background color will change to green.
     handleRead = async (enquiryId, read) => {
         const id = { isRead: read }
-        await axios.put('http://localhost:4000/api/enquiries/' + enquiryId, id)
-        this.componentWillUpdate()
+        await axios.put('https://wotnotmedia.herokuapp.com/api/enquiries/' + enquiryId, id)
+        this.setState({ enquiries : [] })
+        axios.get('https://wotnotmedia.herokuapp.com/api/enquiries')
+        .then(res => {
+            this.setState({ enquiries: res.data})
+        })
     }
+        
+        
 
 
     render() {
