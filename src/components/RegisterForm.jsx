@@ -18,14 +18,14 @@ export default class RegisterForm extends Component {
             }
         }
     }
-    
+
 
     onChange = e => {
         const account = {...this.state.account}
         account[e.currentTarget.name] = e.currentTarget.value
         this.setState({ account })
     }
-    
+
 
     onSubmit = e => {
         e.preventDefault()
@@ -34,12 +34,8 @@ export default class RegisterForm extends Component {
             name: this.state.account.name,
             password: this.state.account.password
         }
-        
-    
         axios.post('http://localhost:4000/api/users', newUser)
             .then(res => console.log(res.data))
-        
-            
         this.setState({
             account: {
             name: '',
