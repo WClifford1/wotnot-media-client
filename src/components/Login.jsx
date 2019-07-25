@@ -50,17 +50,14 @@ export default class Login extends Component {
                 account: {
                     name: '',
                     password: ''
-                },
-                login: true
+                }
             })
         )
     }
 
 
     render() {
-        if (this.state.login) {
-        return <Redirect to='/dashboard'/>;
-        }
+       
         return (
             <React.Fragment>
   
