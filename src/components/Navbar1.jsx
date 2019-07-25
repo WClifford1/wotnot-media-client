@@ -12,12 +12,12 @@ export default function Navbar1() {
                 
                 <h2 className="logo"><Link to="/"><img src={logo} className="logo-inner" alt="hoohaa" /></Link></h2>
                 <ul className="nav-items">
-                    <li><a className="hov" href="sad"><Link to="/projects">
+                    <li><a className="hov" href="#\"><Link to="/projects">
                     Projects
                     </Link></a></li>
-                    <li><a className="hov" href="sad"><Link to="/services">Services</Link></a></li>
-                    <li><a className="hov" href="sad"><Link to="/faq">FAQ</Link></a></li>
-                    <li><a className="hov" href="sad"><Link to="/contact">Contact</Link></a></li>
+                    <li><a className="hov" href="#"><Link to="/services">Services</Link></a></li>
+                    <li><a className="hov" href="#"><Link to="/faq">FAQ</Link></a></li>
+                    <li><a className="hov" href="#"><Link to="/contact">Contact</Link></a></li>
                 </ul>
             </div>
         </div>

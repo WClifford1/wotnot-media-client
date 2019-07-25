@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import map from '../images/map.jpg'
-import contact from '../images/contact.svg'
+import contact from '../images/contact.png'
 
 export default class Contact extends Component {
     constructor(props) {
@@ -84,44 +84,44 @@ export default class Contact extends Component {
 
 
                     <form onSubmit={this.onSubmit}>
-                        <div className="contact-text">
+                        {/* <div className="contact-text">
                             <label><strong>Name :</strong></label>
-                        </div>
+                        </div> */}
 
                         <div className="contact-input">
                             <input type="text" className="contact-control"
                                 value={this.state.name}
-                                onChange={this.onChangeName} placeholder="Enter phone name here" />
+                                onChange={this.onChangeName} placeholder="Insert name here" />
                         </div>
-
+{/* 
                         <div className="contact-text">
                             <label><strong>Email :</strong></label>
-                        </div>
+                        </div> */}
 
                         <div className="contact-input">
                             <input type="text" className="contact-control"
                                 value={this.state.email}
-                                onChange={this.onChangeEmail} placeholder="Enter phone email here" />
+                                onChange={this.onChangeEmail} placeholder="Insert phone email here" />
                         </div>
 
-                        <div className="contact-text">
+                        {/* <div className="contact-text">
                             <label><strong>Phone :</strong></label>
-                        </div>
+                        </div> */}
 
                         <div className="contact-input">
                             <input type="text" className="contact-control"
                                 value={this.state.phoneNumber}
-                                onChange={this.onChangePhoneNumber} placeholder="Enter phone number here" />
+                                onChange={this.onChangePhoneNumber} placeholder="Insert phone number here" />
                         </div>
-
+{/* 
                         <div className="contact-text">
                             <label><strong>Message :</strong></label>
-                        </div>
+                        </div> */}
 
-                        <div className="contact-message">
+                        <div className="contact-input">
                             <input type="text" className="contact-control"
                                 value={this.state.enquiry}
-                                onChange={this.onChangeEnquiry} placeholder="Enter enquiry here" />
+                                onChange={this.onChangeEnquiry} placeholder="Insert message here" />
                         </div>
 
                         <div className="contact-btn">

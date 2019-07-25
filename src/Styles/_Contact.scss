@@ -53,7 +53,7 @@ $material-blue: #ECF6FB;
         width: 40%;
     
         .contact-message {
-            padding-top: 40px;
+            // padding-top: 40px;
             
             input {
                 width: 100%;
@@ -98,11 +98,11 @@ $material-blue: #ECF6FB;
         .contact-input {
             // border: 2px solid saddlebrown;
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             width: 100%;
 
             input {
-                width: 100%;
+                width: 360px;
                 // margin: 20px 0;
                 background: rgba(0,0,0,0);
                 border: none;
@@ -119,7 +119,7 @@ $material-blue: #ECF6FB;
             // }
             
             ::-webkit-input-placeholder {
-                color: rgb(204, 204, 204);
+                color: rgb(134, 134, 134);
                 font-size: 14px;
                 letter-spacing: 2px;
                 font-family: 'Montserrat', sans-serif;
@@ -137,17 +137,20 @@ $material-blue: #ECF6FB;
         
         
         .contact-btn {
-            padding: 20px;
+            // padding: 5px;
 
             .contact-sub {
-                border: 1px solid $material-yellow;
-                padding: 20px;
+                border: 1px solid $dark-blue;
+                padding: 20px 25px;
+                min-width: 110px;
+                max-width: 150px;
+
                 // border: 2px solid red;
-                border-radius: 40px;
+                border-radius: 50px;
                 font-size: 15px;
-                background-color: $material-yellow;
+                background-color: $dark-blue;
                 color: white;
-                width: 150px;
+                // width: 150px;
             }
         }
 
@@ -157,12 +160,17 @@ $material-blue: #ECF6FB;
         display: flex;
         justify-content: center;
         // left: 80px;
-        padding-left: 60px;
+        // padding-left: 60px;  
+        object-fit: contain;
         // border: 2px solid red;
+        width: 50%;
+
+        // text-align: center;
+
 
         img{
-        width: 80%;
-        height: 400px;
+        width: 100%;
+        height: auto;
         // border: 2px solid blue;
         }
     }

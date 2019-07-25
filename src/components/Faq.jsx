@@ -20,9 +20,9 @@ export default class Faq extends Component {
             />
             <Accordion title="What services do offer?" 
             content="
-            <p>By hiring wotnot media for your next big project, you will be provided with your own professional graphics designer who will walk you step by step through the design process from start to finish.</p>
+            <p>By hiring Wotnot Media for your next big project, you will be provided with your own professional graphics designer who will walk you step by step through the design process from start to finish.</p>
             <br />
-            <p>What’s included:</p>
+            <p><strong>What’s included: </strong></p>
             <br />
             <ul>
             <li>Profesional consulation to identify your project’s key message and goals (target market, profit goals, brand awareness strategies etc).</li>
