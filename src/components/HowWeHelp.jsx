@@ -18,7 +18,7 @@ export default function HowWeHelp() {
 
             <div className="help-text">
                 <h1>HOW CAN WE HELP?</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatem tenetur perspiciatis doloribus. Porro animi officiis, rem similique modi nisi. Obcaecati, voluptatibus qui sapiente doloribus aperiam saepe consectetur necessitatibus natus sint neque. Dicta dolor ipsam eum a dolores quidem unde non sapiente omnis quis eaque eveniet nostrum velit, suscipit perferendis illum quae facere fuga pariatur ut dolore ullam. Porro.</p>
+                <p>We can help in bringing your messages and brand to life in the online world. We have Advanced knowledge with building customised Wordpress based websites and landing pages to make your organisation look just as good online as in it does in your print publications. And best of all, with a wordpress based website, and a little bit of training, you and your team can maintain a professional looking and functional website yourselves, without the need to know complex web languages, a massive time and money saver.</p>
                 <div className="helpbtn-cont">
                     <button type="button" className="help-btn">Book Now</button>
                 </div>

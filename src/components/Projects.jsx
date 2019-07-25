@@ -2,6 +2,7 @@ import React from 'react'
 import one from '../images/proj6.png'
 import two from '../images/proj7.png'
 import three from '../images/proj10.png'
+import four from '../images/proj11.png'
 import tak2 from '../images/grid14.png'
 import tak3 from '../images/grid16.png'
 import tak4 from '../images/grid18.png'
@@ -23,7 +24,7 @@ export default function Projects() {
                     <div class="portfolio-item medium"><img src={one} alt="Newspaper flyer"/></div>
                     <div class="portfolio-item large two">two</div>
                     <div class="portfolio-item medium"><img src={one} alt="Newspaper flyer"/></div>
-                    <div class="portfolio-item small">four</div>
+                    <div class="portfolio-item small"><img src={four} alt="Newspaper flyer"/></div>
                     <div class="portfolio-item tall"><img src={three} alt="Newspaper flyer"/></div>
                     <div class="portfolio-item wide"><img src={two} alt="Newspaper flyer"/></div>
                     {/* <div class="portfolio-item wide">six</div>

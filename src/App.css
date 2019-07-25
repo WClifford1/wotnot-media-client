@@ -1488,7 +1488,7 @@ html {
       align-content: center;
   width: 100%;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   font-weight: 100;
   color: #7d7ebe;
 }
@@ -1521,7 +1521,7 @@ html {
   border-radius: 40px;
   background-color: #f0ac39;
   font-size: 17px;
-  padding: 15px 40px 15px 40px;
+  padding: 15px 30px;
   border: 1px solid #f0ac39;
   cursor: pointer;
   color: white;
