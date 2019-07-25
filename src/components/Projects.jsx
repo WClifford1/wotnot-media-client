@@ -24,7 +24,7 @@ export default function Projects() {
                     <div class="portfolio-item large two">two</div>
                     <div class="portfolio-item medium"><img src={one} alt="Newspaper flyer"/></div>
                     <div class="portfolio-item small">four</div>
-                    <div class="portfolio-item tall">nah</div>
+                    <div class="portfolio-item tall"><img src={three} alt="Newspaper flyer"/></div>
                     <div class="portfolio-item wide"><img src={two} alt="Newspaper flyer"/></div>
                     {/* <div class="portfolio-item wide">six</div>
                     <div class="portfolio-item medium">one</div> */}
