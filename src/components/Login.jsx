@@ -40,6 +40,7 @@ export default class Login extends Component {
         // Send the newUser to the enquiry post route
         // Name and password are authorized on the backend
         // If successful a token will be generated and saved into localstorage
+        // axios.post('https://wotnotmedia.herokuapp.com/api/auth', newUser)
         axios.post('http://localhost:4000/api/auth', newUser)
             .then(res =>
                 localStorage.setItem('token', res.data))
