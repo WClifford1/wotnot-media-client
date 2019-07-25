@@ -143,7 +143,7 @@ onSubmit(e) {
                                 placeholder="Insert email here" 
                             />
                             {/* Conditional error rendering if input fails validaiton */}
-                            {this.state.errors.email && <p style={{ color: "red" }}>{this.state.errors.email}
+                            {this.state.errors.email && <p style={{ color: "red" }}>{this.state.errors.email}</p>} 
                         </div>
 
  
@@ -182,7 +182,7 @@ onSubmit(e) {
                 </div>
 
                 <div className="contact-pic">
-                    <img src={contact} alt=""/>
+                    <img src={contact} alt="" />
                 </div>
 
             </div>
