@@ -514,6 +514,9 @@
   background-color: #ECF6FB;
   border-radius: 0 0 5px 5px;
   color: #211c4f;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80%;
 }
 
 .faq-header {
@@ -1143,6 +1146,10 @@ input {
   overflow: hidden;
   font-size: 1.5em;
   background-size: cover;
+}
+
+.portfolio-item img {
+  height: 100%;
 }
 
 .portfolio-item.small {
