@@ -1,6 +1,6 @@
 $off-white: #fcf7f8;
 $dark-blue: #211c4f;
-$material-grey: #bab0ba;
+$material-grey: #a8a4a8;
 $material-pink: #d98d91;
 $material-purple: #7d7ebe;
 $material-red: #eb561a;
@@ -11,9 +11,12 @@ $off-black: #322645;
     display: flex;
     flex-direction: column;
     padding: 40px;
+    // text-align: center;
+    // width: 60%;
+    // justify-content: center;
 
     h1 {
-        color: $material-purple;
+        color: $dark-blue;
         display: flex;
         justify-content: center;
         padding: 10px 0 40px 0;
@@ -32,7 +35,7 @@ $off-black: #322645;
     }
 
     h2 {
-        padding: 20px;
+        padding: 10px;
         font-weight: 100;
         color: $material-pink;
     }

@@ -6,15 +6,6 @@ export default function Privacy() {
             <h1>Privacy Policy</h1>
 
 
-<p>Effective date: July 21, 2019</p>
-
-
-<p>http://localhost:3000/ ("us", "we", or "our") operates the Wotnot Media website (hereinafter referred to as the "Service").</p>
-
-<p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. The Privacy Policy  for http://localhost:3000/ has been created with the help of <a href="https://www.termsfeed.com/">TermsFeed</a>.</p>
-
-<p>We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from Wotnot Media</p>
-
 <h2>Definitions</h2>
 <ul>
     <li>
@@ -38,7 +29,7 @@ export default function Privacy() {
 <h2>Information Collection and Use</h2>
 <p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
 
-<h3>Types of Data Collected</h3>
+
 
 <h4>Personal Data</h4>
 <p>While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:</p>
@@ -83,7 +74,7 @@ export default function Privacy() {
 
 <h2>Disclosure Of Data</h2>
 
-<h3>Legal Requirements</h3>
+
 <p>http://localhost:3000/ may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
 <ul>
     <li>To comply with a legal obligation</li>
@@ -93,7 +84,7 @@ export default function Privacy() {
     <li>To protect against legal liability</li>
 </ul>
 
-<p>As an European citizen, under GDPR, you have certain individual rights. You can learn more about these guides in the <a href="https://termsfeed.com/blog/gdpr/#Individual_Rights_Under_the_GDPR">GDPR Guide</a>.</p>
+<p>As an European citizen, under GDPR, you have certain individual rights. You can learn more about these guides in the loop.</p>
 
 <h2>Security of Data</h2>
 <p>The security of your data is important to us but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
