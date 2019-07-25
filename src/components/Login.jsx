@@ -32,13 +32,11 @@ export default class Login extends Component {
 
     onSubmit(e) {
         e.preventDefault()
-
         // newUser variable represents the state
         const newUser = {
             name: this.state.account.name,
             password: this.state.account.password
         }
-
         // Send the newUser to the enquiry post route
         // Name and password are authorized on the backend
         // If successful a token will be generated and saved into localstorage
@@ -57,11 +55,11 @@ export default class Login extends Component {
 
 
     render() {
-       
+        if (this.state.login) {
+        return <Redirect to='/dashboard'/>;
+        }
         return (
             <React.Fragment>
-  
-
             <div className="staff-cont">
                 <div className="staff-title">
                     <h1>Login</h1>
