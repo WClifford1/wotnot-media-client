@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../images/logo1.png'
 
 export default function Navbar1() {
     return (
@@ -9,9 +10,9 @@ export default function Navbar1() {
                 <img src={test} alt=""/>
                 </div> */}
                 
-                <h2 className="logo"><Link to="/">WotNot Media</Link></h2>
+                <h2 className="logo"><Link to="/"><img src={logo} className="logo-inner" alt="hoohaa" /></Link></h2>
                 <ul className="nav-items">
-                    <li><a className="hov" href="sad"><Link to="/services">
+                    <li><a className="hov" href="sad"><Link to="/projects">
                     Projects
                     </Link></a></li>
                     <li><a className="hov" href="sad"><Link to="/services">Services</Link></a></li>

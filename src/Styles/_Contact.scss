@@ -6,6 +6,8 @@ $material-purple: #7d7ebe;
 $material-red: #eb561a;
 $material-yellow: #f0ac39;
 $off-black: #322645;
+$material-blue: #ECF6FB;
+
 
 .contact-cont {
     // border: 2px solid red;
@@ -51,8 +53,28 @@ $off-black: #322645;
         width: 40%;
     
         .contact-message {
-            margin-top: 40px;
-            outline: none;
+            padding-top: 40px;
+            
+            input {
+                width: 100%;
+                // margin: 20px 0;
+                background: rgba(0,0,0,0);
+                border: none;
+                outline: none;
+                box-shadow: none;
+                border-bottom: 1px solid $material-grey;
+                height: 36px;
+                line-height: 36px;
+                margin-top: 10px;
+            }
+
+            ::-webkit-input-placeholder {
+                color: rgb(204, 204, 204);
+                font-size: 14px;
+                letter-spacing: 2px;
+                font-family: 'Montserrat', sans-serif;
+    
+            }
         }
 
         h1   {
@@ -61,7 +83,7 @@ $off-black: #322645;
             font-size: 46px;
             line-height: 1.3;
             font-weight: 500;
-            color: $material-pink;
+            color: $dark-blue;
         }
         // text-align: center;
         .contact-text {
@@ -121,7 +143,7 @@ $off-black: #322645;
                 border: 1px solid $material-yellow;
                 padding: 20px;
                 // border: 2px solid red;
-                border-radius: 20px;
+                border-radius: 40px;
                 font-size: 15px;
                 background-color: $material-yellow;
                 color: white;

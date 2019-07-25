@@ -12,6 +12,8 @@
 @import './Styles/PrivCont';
 @import './Styles/Showcase';
 @import './Styles/TestContact';
+@import './Styles/Projects';
+@import './Styles/Login';
 
 $off-white: #fcf7f8;
 $dark-blue: #211c4f;
@@ -78,6 +80,18 @@ html {
     background-color: #fff;
     // border: 2px solid red;
 
+    .logo {
+        // border: 2px solid red;
+        
+        
+
+        .logo-inner {
+            // border: 2px solid green;
+            height: 40px;
+            
+        }
+    }
+
     .hero-image {
         display: flex;
     //     // border: 2px solid red;
@@ -87,6 +101,7 @@ html {
     //         height: 100%;
             
     //     }
+
 
     // ----------------------------------------
 
@@ -204,7 +219,7 @@ html {
 
 
 
-    .serves1 {
+    .servess {
         color: $material-yellow;
         // border: 2px solid red;
         // display: flex;
@@ -216,52 +231,15 @@ html {
             height: 100px;
         }
 
-
-        .serves1-text {
-            padding: 15px;
+        a {
+            text-decoration: none;
             color: $material-purple;
+
         }
 
-        &:hover {
-            transform: scale(1.1);
-            cursor: pointer;
-        }
-    }
 
-    .serves2 {
-        color: $material-yellow;
-        // border: 2px solid red;
-        text-align: center;
-        padding: 10px;
-
-        .blob {
-            height: 100px;
-        }
-
-        .serves2-text {
+        .servess-text {
             padding: 15px;
-            color: $material-purple;
-        }
-
-        &:hover {
-            transform: scale(1.1);
-            cursor: pointer;
-        }
-    }
-
-    .serves3 {
-        color: $material-yellow;
-        // border: 2px solid red;
-        text-align: center;
-        padding: 10px;
-
-        .blob {
-            height: 100px;
-        }
-
-        .serves3-text {
-            padding: 15px;
-            color: $material-purple;
         }
 
         &:hover {
@@ -459,10 +437,23 @@ html {
         // padding-top: 20px;
         // border: 2px solid green;
         // margin-left: -150px;
+
         padding-top: 20px;
         color: $material-purple;
         padding-left: 20px;
         width: 40%;
+
+        .logo {
+            // border: 2px solid red;
+            
+            
+    
+            .logo-inner {
+                // border: 2px solid green;
+                height: 40px;
+                
+            }
+        }
 
 
         h2 {

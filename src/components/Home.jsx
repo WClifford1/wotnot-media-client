@@ -10,6 +10,7 @@ import Showcase from './Showcase';
 
 export default function Home() {
     return (
+        <React.Fragment>
             <div className="nav-cont">
                 <div className="hero-image">
                     <div className="hero-text">
@@ -33,5 +34,6 @@ export default function Home() {
                 <WhyUs />
                 <Showcase />
             </div>
+        </React.Fragment>
     )
 }
