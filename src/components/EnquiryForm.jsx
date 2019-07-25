@@ -68,8 +68,6 @@ export default class EnquiryForm extends Component {
         console.log(errors)
         this.setState( { errors })
         if (errors) return
-
-
         // newEnquiry variable created from what is currently in the input boxes.
         const newEnquiry = {
             name: this.state.enquiry.name,
@@ -77,14 +75,11 @@ export default class EnquiryForm extends Component {
             phoneNumber: this.state.enquiry.phoneNumber,
             enquiry: this.state.enquiry.enquiry
         }
-
-
         // axios POST newEnquiry object to database
         // https://wotnotmedia.herokuapp.com/api/enquiries
         axios.post('http://localhost:4000/api/enquiries', newEnquiry)
             .then(res => console.log(res.data)
             )
-
         // Reset state
         this.setState({
             enquiry : {
@@ -94,7 +89,6 @@ export default class EnquiryForm extends Component {
                 enquiry: ''
             }
         })
-
         // Take user back to the homepage
         this.props.history.push('/')
     }
@@ -123,7 +117,7 @@ export default class EnquiryForm extends Component {
                                 value={this.state.enquiry.name}
                                 onChange={this.onChange}
                             />
-                            {/* Conditional rendering if input fails validaiton */}
+                            {/* Conditional error rendering if input fails validaiton */}
                             {this.state.errors.name && <p style={{ color: "red" }}>{this.state.errors.name}</p>}
                         </div>
 
@@ -140,7 +134,7 @@ export default class EnquiryForm extends Component {
                                 value={this.state.enquiry.email}
                                 onChange={this.onChange} 
                             />
-                            {/* Conditional rendering if input fails validaiton */}
+                            {/* Conditional error rendering if input fails validaiton */}
                             {this.state.errors.email && <p style={{ color: "red" }}>{this.state.errors.email}</p>}
                         </div>
 
@@ -172,7 +166,7 @@ export default class EnquiryForm extends Component {
                                 value={this.state.enquiry.enquiry}
                                 onChange={this.onChange} 
                             />
-                            {/* Conditional rendering if input fails validaiton */}
+                            {/* Conditional error rendering if input fails validaiton */}
                             {this.state.errors.enquiry && <p style={{ color: "red" }}>{this.state.errors.enquiry}</p>}
                         </div>
 

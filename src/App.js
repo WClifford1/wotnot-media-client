@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Home from './components/Home';
 import Card1 from './components/Card1'; 
 import EnquiryForm from './components/EnquiryForm';
-import BookingForm from './components/BookingForm';
 import Footer from './components/Footer';
 import Navbar1 from './components/Navbar1';
 import { Switch, Route } from 'react-router-dom';
@@ -33,7 +32,6 @@ export default class App extends Component {
           <Route path="/FAQ" component={Faq} />
           <Route path="/contact" component={Contact} />
           <Route path="/enquiries" component={EnquiryForm} />
-          <Route path="/bookings" component={BookingForm} />
           <Route path="/termsandconditions" component={Terms} />
           <Route path="/privacy" component={Privacy} />
           <Route path="/login" component={Login} />
