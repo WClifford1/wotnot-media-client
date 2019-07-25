@@ -17,7 +17,8 @@ export default class Login extends Component {
             account: {
                 name: '',
                 password: ''
-            }
+            },
+        login: false
         }
     }
 
@@ -41,22 +42,29 @@ export default class Login extends Component {
         // Send the newUser to the enquiry post route
         // Name and password are authorized on the backend
         // If successful a token will be generated and saved into localstorage
-        axios.post('https://wotnotmedia.herokuapp.com/api/auth', newUser)
+        axios.post('http://localhost:4000/api/auth', newUser)
             .then(res =>
                 localStorage.setItem('token', res.data))
             .then(res =>
-                <Redirect to='/dashboard'  />)
-        this.setState({
-            account: {
-                name: '',
-                password: ''
-            }
-        })
+            this.setState({
+                account: {
+                    name: '',
+                    password: ''
+                },
+                login: true
+            })
+        )
     }
 
 
     render() {
+        if (this.state.login) {
+        return <Redirect to='/dashboard'/>;
+        }
         return (
+            <React.Fragment>
+  
+
             <div className="staff-cont">
                 <div className="staff-title">
                     <h1>Login</h1>
@@ -82,6 +90,7 @@ export default class Login extends Component {
                     </form>
                 </div>
             </div>
+            </React.Fragment>
         )
     }
 }

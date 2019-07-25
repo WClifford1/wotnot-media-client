@@ -17,18 +17,19 @@ export default class Dashboard extends Component {
     // Set the enquries as the state
     componentDidMount() {
         axios.defaults.headers.common['x-auth-token'] = localStorage.getItem('token')
-        axios.get('https://wotnotmedia.herokuapp.com/api/enquiries')
+        axios.get('http://localhost:4000/api/enquiries')
         .then(res => {
             this.setState({ enquiries: res.data})
         })
     }
+
 
     // To delete enquiry send through the enquiry id as a param
     // Send an axios delete request
     // Reset the state without the deleted item
     handleDelete = async enquiryId => {
         if (window.confirm('Are you sure you wish to delete this item?')) {
-        await axios.delete('https://wotnotmedia.herokuapp.com/api/enquiries/' + enquiryId)
+        await axios.delete('http://localhost:4000/api/enquiries/' + enquiryId)
         this.setState({ enquiries: this.state.enquiries.filter(x => x._id !== enquiryId) })
     }}
 
@@ -38,9 +39,10 @@ export default class Dashboard extends Component {
     // When isRead is true the grid-box background color will change to green.
     handleRead = async (enquiryId, read) => {
         const id = { isRead: read }
-        await axios.put('https://wotnotmedia.herokuapp.com/api/enquiries/' + enquiryId, id)
-        window.location.reload()
+        await axios.put('http://localhost:4000/api/enquiries/' + enquiryId, id)
+        this.componentWillUpdate()
     }
+
 
     render() {
         return (
