@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import contact from '../images/contact.svg'
+
+import map from '../images/map.jpg'
+import contact from '../images/contact.png'
+
 
 
 export default class Contact extends Component {
@@ -111,43 +114,39 @@ onSubmit(e) {
 
 
                     <form onSubmit={this.onSubmit}>
-                        <div className="contact-text">
-                            <label><strong>Name :</strong></label>
-                        </div>
+            
 
                         <div className="contact-input">
+
                             <input
                                 name="name"
                                 type="text"
                                 className="contact-control"
                                 value={this.state.enquiry.name}
                                 onChange={this.onChange} 
-                                placeholder="Enter phone name here" 
+                                placeholder="Insert name here" 
                             />
                             {/* Conditional error rendering if input fails validaiton */}
                             {this.state.errors.name && <p style={{ color: "red" }}>{this.state.errors.name}</p>}
+
                         </div>
 
-                        <div className="contact-text">
-                            <label><strong>Email :</strong></label>
-                        </div>
 
                         <div className="contact-input">
+
                             <input 
                                 name="email"
                                 type="email" 
                                 className="contact-control"
                                 value={this.state.enquiry.email}
                                 onChange={this.onChange} 
-                                placeholder="Enter phone email here" 
+                                placeholder="Insert email here" 
                             />
                             {/* Conditional error rendering if input fails validaiton */}
-                            {this.state.errors.email && <p style={{ color: "red" }}>{this.state.errors.email}</p>}
+                            {this.state.errors.email && <p style={{ color: "red" }}>{this.state.errors.email}
                         </div>
 
-                        <div className="contact-text">
-                            <label><strong>Phone :</strong></label>
-                        </div>
+ 
 
                         <div className="contact-input">
                             <input 
@@ -156,22 +155,19 @@ onSubmit(e) {
                                 className="contact-control"
                                 value={this.state.enquiry.phoneNumber}
                                 onChange={this.onChangePhoneNumber} 
-                                placeholder="Enter phone number here" 
+                                placeholder="Insert phone number here" 
                             />
                         </div>
 
-                        <div className="contact-text">
-                            <label><strong>Message :</strong></label>
-                        </div>
 
-                        <div className="contact-message">
+                        <div className="contact-input">
                             <input 
                                 name="enquiry"
                                 type="text" 
                                 className="contact-control"
                                 value={this.state.enquiry.enquiry}
                                 onChange={this.onChange} 
-                                placeholder="Enter enquiry here" 
+                                placeholder="Insert message here" 
                             />
                             {/* Conditional error rendering if input fails validaiton */}
                             {this.state.errors.enquiry && <p style={{ color: "red" }}>{this.state.errors.enquiry}</p>}

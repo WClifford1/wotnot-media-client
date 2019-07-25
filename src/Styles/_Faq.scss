@@ -69,6 +69,8 @@ $material-blue: #ECF6FB;
     background-color: $material-blue;
     border-radius: 0 0 5px 5px;
     color: $dark-blue;
+    box-sizing: border-box;
+    width: 80%;
     // text-align: center;
 }
 

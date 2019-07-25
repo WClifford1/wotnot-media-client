@@ -15,7 +15,8 @@ export default function Home() {
                 <div className="hero-image">
                     <div className="hero-text">
                         <h1>Lucrative, Innovative, Design Solutions</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores sit voluptates optio odit nihil iusto est sint qui! Exercitationem delectus nihil alias praesentium iste maiores officiis quisquam repellat. Voluptates.</p>
+                        <p>I am a graphic design company specialising in print and web design. We've created newsletters, direct mail letters, newspapers, flyers, brochures, calendars, banners and much more.
+Having delved in marketing and communications for over 10 years, we know how to take your ideas from concept to completion.</p>
                         <div className="hbtn-cont">
                             <Link to="/enquiries"><button type="button" class="hero-btn">Enquire Today!</button></Link>
                         </div>
