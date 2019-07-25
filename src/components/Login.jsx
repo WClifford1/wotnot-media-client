@@ -17,7 +17,8 @@ export default class Login extends Component {
             account: {
                 name: '',
                 password: ''
-            }
+            },
+        login: false
         }
     }
 
@@ -45,18 +46,25 @@ export default class Login extends Component {
             .then(res =>
                 localStorage.setItem('token', res.data))
             .then(res =>
-                <Redirect to='/dashboard'  />)
-        this.setState({
-            account: {
-                name: '',
-                password: ''
-            }
-        })
+            this.setState({
+                account: {
+                    name: '',
+                    password: ''
+                },
+                login: true
+            })
+        )
     }
 
 
     render() {
+        if (this.state.login) {
+        return <Redirect to='/dashboard'/>;
+        }
         return (
+            <React.Fragment>
+  
+
             <div className="staff-cont">
                 <div className="staff-title">
                     <h1>Login</h1>
@@ -82,6 +90,7 @@ export default class Login extends Component {
                     </form>
                 </div>
             </div>
+            </React.Fragment>
         )
     }
 }

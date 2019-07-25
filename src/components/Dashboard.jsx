@@ -23,6 +23,7 @@ export default class Dashboard extends Component {
         })
     }
 
+
     // To delete enquiry send through the enquiry id as a param
     // Send an axios delete request
     // Reset the state without the deleted item
@@ -39,8 +40,9 @@ export default class Dashboard extends Component {
     handleRead = async (enquiryId, read) => {
         const id = { isRead: read }
         await axios.put('http://localhost:4000/api/enquiries/' + enquiryId, id)
-        window.location.reload()
+        this.componentWillUpdate()
     }
+
 
     render() {
         return (
